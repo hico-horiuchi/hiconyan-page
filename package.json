@@ -4,7 +4,8 @@
   "description": "https://hiconyan.page",
   "main": "index.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
