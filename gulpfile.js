@@ -27,10 +27,6 @@ html = () => {
 css = () => {
   return src(config.get('src').get('scss'))
     .pipe(sass())
-    .pipe(postcss([
-      require('tailwindcss'),
-      require('autoprefixer')
-    ]))
     .pipe(csso())
     .pipe(concat('app.min.css'))
     .pipe(dest(config.get('dest').get('css')))
