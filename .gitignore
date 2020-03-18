@@ -120,4 +120,5 @@ dist
 .firebaserc
 
 # Firebase public directory
-public/
+public/*.css
+public/*.html
