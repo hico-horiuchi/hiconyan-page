@@ -1,0 +1,23 @@
+---
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  build-and-deploy:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm run build
+            - run: npm run deploy -- --token $FIREBASE_TOKEN
+workflows:
+  build-and-deploy:
+    jobs:
+      - build-and-deploy:
+          filters:
+            branches:
+              only:
+                - master

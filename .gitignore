@@ -114,10 +114,7 @@ dist
 .pnp.*
 
 # Optional firebase cache directory
-.firebase
-
-# Firebase configuration
-.firebaserc
+.firebase/
 
 # Firebase public directory
 public/*.css
