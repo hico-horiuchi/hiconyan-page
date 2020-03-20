@@ -13,9 +13,9 @@
   position: relative;
 
   img:first-child {
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
-    object-position: 100% 100%;
+    object-position: 100% 0%;
     width: 100%;
   }
 
@@ -23,7 +23,7 @@
     left: 0;
     position: absolute;
     right: 0;
-    top: 20rem;
+    top: 15rem;
     width: 10rem;
   }
 }
