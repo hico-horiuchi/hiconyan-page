@@ -1,20 +1,41 @@
-body {
+* {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-.nyan-header {
+.Box {
+  border: none;
+}
+
+.Box-body {
+  border-bottom: 1px solid #eaecef;
+  border-left: 1px solid #eaecef;
+  border-right: 1px solid #eaecef;
+}
+
+.Box-header {
+  border: none;
   position: relative;
 
   img:first-child {
     height: 25rem;
     object-fit: cover;
     object-position: 100% 100%;
+    width: 100%;
+  }
+
+  img.nyan-icon {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 20rem;
+    width: 10rem;
   }
 }
 
-.nyan-icon {
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 20rem;
+.lh-2 {
+  line-height: 2;
+}
+
+.pt-10 {
+  padding-top: 72px;
 }

@@ -4,39 +4,39 @@ html
     title Akihiko Horiuchi
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    / link rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"
     link rel="stylesheet" type="text/css" href="app.min.css"
   body
-    .container.mx-auto
-      .grid.grid-cols-1.gap-0.m-6
-        .border.border-gray-200.max-w-4xl.mx-auto.overflow-hidden.rounded-lg.shadow-lg
-          .nyan-header
-            img.w-full src="header.jpg"
-            img.mx-auto.nyan-icon.rounded-full.w-40 src="https://www.gravatar.com/avatar/80aa531a501c1787edd964c8cc28f32c?size=400"
-          .pb-10.pt-24
-            .text-center
-              .font-bold.text-xl.text-gray-600 Akihiko Horiuchi
-              .text-gray-400.text-lg Software Engineer, NTT Ltd.
-            .mt-8.leading-loose.text-center.text-gray-500
-              i.fab.fa-facebook.mr-2
-              a href="https://www.facebook.com/hico.horiuchi" Akihiko Horiuchi
-              br
-              i.fab.fa-github.mr-2
-              a href="https://github.com/hico-horiuchi" hico-horiuchi
-              br
-              i.fab.fa-instagram.mr-2
-              a href="https://www.instagram.com/hico_horiuchi/" hico_horiuchi
-              br
-              i.fab.fa-linkedin.mr-2
-              a href="https://www.linkedin.com/in/hico-horiuchi/" Akihiko Horiuchi
-              br
-              i.fab.fa-speaker-deck.mr-2
-              a href="https://speakerdeck.com/hiconyan" hiconyan
-              br
-              i.fab.fa-twitter.mr-2
-              a href="https://twitter.com/hico_horiuchi" hico_horiuchi
-            .mt-8.text-center.text-sm.text-gray-400
-              i.far.fa-copyright.mr-2
-              | 2020
-      script src="https://kit.fontawesome.com/98ede86df1.js" crossorigin="anonymous"
+    .container-md.p-4
+      .Box.box-shadow-large.mx-auto.rounded-2
+        .Box-header.p-0.rounded-top-2.lh-0
+          img.rounded-top-2 src="header.jpg"
+          img.circle.mx-auto.nyan-icon src="https://www.gravatar.com/avatar/80aa531a501c1787edd964c8cc28f32c?size=400"
+        .Box-body.pb-6.pt-10.px-6.rounded-bottom-2
+          .text-center
+            .h2.text-bold.text-gray-dark Akihiko Horiuchi
+            .h3.text-gray-light Software Engineer, NTT Ltd.
+          .h4.lh-2.mt-4.text-center.text-gray
+            i.fab.fa-facebook.mr-2
+            a.text-gray href="https://www.facebook.com/hico.horiuchi" Akihiko Horiuchi
+            br
+            i.fab.fa-github.mr-2
+            a.text-gray href="https://github.com/hico-horiuchi" hico-horiuchi
+            br
+            i.fab.fa-instagram.mr-2
+            a.text-gray href="https://www.instagram.com/hico_horiuchi/" hico_horiuchi
+            br
+            i.fab.fa-linkedin.mr-2
+            a.text-gray href="https://www.linkedin.com/in/hico-horiuchi/" Akihiko Horiuchi
+            br
+            i.fab.fa-speaker-deck.mr-2
+            a.text-gray href="https://speakerdeck.com/hiconyan" hiconyan
+            br
+            i.fab.fa-twitter.mr-2
+            a.text-gray href="https://twitter.com/hico_horiuchi" hico_horiuchi
+          .h4.lh-2.mt-4.text-center.text-gray-light
+            i.far.fa-copyright.mr-2
+            | 2020
+    script src="https://kit.fontawesome.com/98ede86df1.js" crossorigin="anonymous"
