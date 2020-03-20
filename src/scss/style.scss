@@ -43,8 +43,8 @@
   }
 }
 
-* {
-  font-family: 'Ubuntu', sans-serif;
+*:not(i) {
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .lh-2 {
