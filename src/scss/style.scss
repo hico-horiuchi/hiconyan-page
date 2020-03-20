@@ -1,7 +1,3 @@
-* {
-  font-family: 'Ubuntu Mono', monospace;
-}
-
 .Box {
   border: none;
 }
@@ -30,6 +26,25 @@
     top: 20rem;
     width: 10rem;
   }
+}
+
+.Timeline {
+  .TimelineItem:first-child {
+    .TimelineItem-badge {
+      background-color: #586069;
+      color: #e1e4e8;
+    }
+  }
+
+  .TimelineItem {
+    .TimelineItem-badge {
+      color: #586069;
+    }
+  }
+}
+
+* {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .lh-2 {
