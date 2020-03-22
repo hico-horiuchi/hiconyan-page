@@ -12,7 +12,7 @@ html
       .Box.box-shadow-large.mx-auto.rounded-2
         .Box-header.p-0.rounded-top-2.lh-0
           img.rounded-top-2 src="header.jpg"
-          img.circle.mx-auto.nyan-icon src="https://www.gravatar.com/avatar/80aa531a501c1787edd964c8cc28f32c?size=400"
+          img.circle.mx-auto.nyan-icon src="icon.jpg"
         .Box-body.pb-6.pt-10.px-6.rounded-bottom-2
           .h2.text-bold.text-center.text-gray-dark
             | Akihiko Horiuchi
