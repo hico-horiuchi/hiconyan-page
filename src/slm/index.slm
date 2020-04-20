@@ -17,7 +17,7 @@ html
           .h2.text-bold.text-center.text-gray-dark
             | Akihiko Horiuchi
           .clearfix
-            .col-md-4.col-sm-12.float-left.h4.lh-2.mt-4
+            .col-md-4.col-sm-12.float-left.h4.lh-3.mt-4
               a.text-gray href="https://www.facebook.com/hico.horiuchi"
                 i.fab.fa-facebook.mr-2
                 | Akihiko Horiuchi
@@ -77,7 +77,7 @@ html
                     .h5.text-gray-light
                       .mb-1 April 2010 - March 2016
                       | Master of computer science
-          .h4.lh-2.mt-4.text-center.text-gray-light
+          .h4.mt-4.text-center.text-gray-light
             i.far.fa-copyright.mr-2
             | 2020
     script src="https://kit.fontawesome.com/98ede86df1.js" crossorigin="anonymous"
