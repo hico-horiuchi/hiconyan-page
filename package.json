@@ -18,13 +18,13 @@
   },
   "homepage": "https://github.com/hico-horiuchi/hiconyan-page#readme",
   "devDependencies": {
-    "firebase-tools": "^8.4.0",
+    "firebase-tools": "^8.6.0",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-csso": "^4.0.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.0",
+    "gulp-sass": "^4.1.0",
     "gulp-slm": "^1.2.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.0"
   }
 }
