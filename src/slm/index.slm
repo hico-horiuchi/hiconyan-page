@@ -49,7 +49,7 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-1.text-gray Software Engineer, NTT Ltd.
+                    .h4.mb-1.text-gray Software Engineer, NTT Ltd Japan
                     .h5.text-gray-light
                       .mb-1 July 2019 - Present
                       | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
