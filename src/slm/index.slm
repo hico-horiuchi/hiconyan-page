@@ -2,17 +2,17 @@ doctype html
 html
   head
     title Akihiko Horiuchi
+    link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
+    link rel="icon" href="favicon.ico"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
-    link rel="icon" href="favicon.ico"
-    link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
-    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400"
-    link rel="stylesheet" type="text/css" href="app.min.css"
   body
     .container-md.p-4
       .Box.box-shadow-large.mx-auto.rounded-2
-        .Box-header.p-0.rounded-top-2.lh-0
+        .Box-header.lh-0.p-0.rounded-top-2
           img.rounded-top-2 src="header.jpg"
           img.circle.mx-auto.nyan-icon src="icon.jpg"
         .Box-body.pb-6.pt-10.px-6.rounded-bottom-2

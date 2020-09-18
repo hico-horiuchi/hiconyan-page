@@ -1,37 +1,37 @@
 const { src, dest, parallel } = require('gulp');
-const slm = require('gulp-slm');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
+const postcss = require('gulp-postcss');
+const sass = require('gulp-sass');
+const slm = require('gulp-slm');
 
 const config = new Map([
   ['src', new Map([
-    ['slm', 'src/slm/*.slm'],
-    ['scss', 'src/scss/*.scss']
+    ['scss', 'src/scss/*.scss'],
+    ['slm', 'src/slm/*.slm']
   ])],
   ['dest', new Map([
-    ['html', 'public'],
-    ['css', 'public']
+    ['css', 'public'],
+    ['html', 'public']
   ])]
 ]);
 
 sass.compiler = require('node-sass');
-
-html = () => {
-  return src(config.get('src').get('slm'))
-    .pipe(slm())
-    .pipe(dest(config.get('dest').get('html')))
-}
 
 css = () => {
   return src(config.get('src').get('scss'))
     .pipe(sass())
     .pipe(csso())
     .pipe(concat('app.min.css'))
-    .pipe(dest(config.get('dest').get('css')))
-}
+    .pipe(dest(config.get('dest').get('css')));
+};
 
-exports.html = html;
+html = () => {
+  return src(config.get('src').get('slm'))
+    .pipe(slm())
+    .pipe(dest(config.get('dest').get('html')));
+};
+
 exports.css = css;
+exports.html = html;
 exports.default = parallel(html, css);

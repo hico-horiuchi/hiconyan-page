@@ -1,3 +1,8 @@
+*:not(i) {
+  font-family: 'Ubuntu', sans-serif !important;
+  letter-spacing: 0.02rem;
+}
+
 .Box {
   border: none;
 }
@@ -43,17 +48,8 @@
   }
 }
 
-*:not(i) {
-  font-family: 'Ubuntu', sans-serif !important;
-  letter-spacing: 0.02rem;
-}
-
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 300 !important;
-}
-
-.text-bold {
-  font-weight: 400 !important;
 }
 
 .lh-3 {
@@ -62,4 +58,8 @@
 
 .pt-10 {
   padding-top: 72px;
+}
+
+.text-bold {
+  font-weight: 400 !important;
 }
