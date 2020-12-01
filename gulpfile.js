@@ -1,26 +1,32 @@
 const { src, dest, parallel } = require('gulp');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
-const postcss = require('gulp-postcss');
+const fibers = require('fibers');
 const sass = require('gulp-sass');
 const slm = require('gulp-slm');
 
 const config = new Map([
-  ['src', new Map([
-    ['scss', 'src/scss/*.scss'],
-    ['slm', 'src/slm/*.slm']
-  ])],
-  ['dest', new Map([
-    ['css', 'public'],
-    ['html', 'public']
-  ])]
+  [
+    'src',
+    new Map([
+      ['scss', 'src/scss/*.scss'],
+      ['slm', 'src/slm/*.slm'],
+    ]),
+  ],
+  [
+    'dest',
+    new Map([
+      ['css', 'public'],
+      ['html', 'public'],
+    ]),
+  ],
 ]);
 
-sass.compiler = require('node-sass');
+sass.compiler = require('sass');
 
 css = () => {
   return src(config.get('src').get('scss'))
-    .pipe(sass())
+    .pipe(sass({ fiber: fibers }))
     .pipe(csso())
     .pipe(concat('app.min.css'))
     .pipe(dest(config.get('dest').get('css')));
