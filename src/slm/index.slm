@@ -49,36 +49,47 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-1.text-gray Software Engineer, NTT Ltd Japan
+                    .h4.mb-2.text-gray Software Engineer, NTT Ltd Japan
+                    .h5.mb-2.text-gray-light
+                      .mb-1 October 2020 - Present
+                      | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                     .h5.text-gray-light
-                      .mb-1 July 2019 - Present
-                      | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                      .mb-1 July 2019 - September 2020
+                      | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                      br
+                      | &emsp; &bull; &nbsp; Imprement APIs for provide physical servers on demand
+                      br
+                      | &emsp; &bull; &nbsp; Integrate with physical servers using IPMI and Redfish
+                      br
+                      | &emsp; &bull; &nbsp; Automate OS installations and settings using PXE, Kickstart and cloud-init
+                      br
+                      | &emsp; &bull; &nbsp; Improve CI/CD, promote ChatOps and so on
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-1.text-gray Software Engineer, NTT Communications
+                    .h4.mb-2.text-gray Software Engineer, NTT Communications
                     .h5.text-gray-light
                       .mb-1 April 2016 - June 2019
-                      | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                      | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-1.text-gray Software Engineer, Aqutras Inc.
+                    .h4.mb-2.text-gray Software Engineer, Aqutras Inc.
                     .h5.text-gray-light
-                      .mb-1 April 2014 - March 2016
-                      | - Develop web applications for advertisements and schedule management
+                      .mb-2 April 2014 - March 2016
+                      | &bull; &nbsp; Develop web applications for advertisements and schedule management
                       br
-                      | - Build monitoring and logging infrastructure for web applications
+                      | &bull; &nbsp; Build monitoring and logging infrastructure for web applications
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-school
                   .TimelineItem-body
-                    .h4.mb-1.text-gray Kagawa University
+                    .h4.mb-2.text-gray Kagawa University
                     .h5.text-gray-light
-                      .mb-1 April 2010 - March 2016
-                      | Master of computer science
+                      .mb-2 April 2010 - March 2016
+                      | &bull; &nbsp; Master of computer science
           .h4.mt-4.text-center.text-gray-light
             i.far.fa-copyright.mr-2
             | 2020
