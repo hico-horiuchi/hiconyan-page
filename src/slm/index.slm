@@ -49,9 +49,17 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
+                    .h4.mb-2.text-gray Software Engineer, NTT Communications
+                    .h5.mb-2.text-gray-light
+                      .mb-1 April 2021 - Present
+                      | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
+                .TimelineItem
+                  .TimelineItem-badge
+                    i.fas.fa-building
+                  .TimelineItem-body
                     .h4.mb-2.text-gray Software Engineer, NTT Ltd Japan
                     .h5.mb-2.text-gray-light
-                      .mb-1 October 2020 - Present
+                      .mb-1 October 2020 - March 2021
                       | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                     .h5.text-gray-light
                       .mb-1 July 2019 - September 2020
