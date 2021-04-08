@@ -11,36 +11,36 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
   body
     .container-md.p-4
-      .Box.box-shadow-large.mx-auto.rounded-2
+      .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
           img.rounded-top-2 src="header.jpg"
           img.circle.mx-auto.nyan-icon src="icon.jpg"
         .Box-body.pb-6.pt-10.px-6.rounded-bottom-2
-          .h2.text-bold.text-center.text-gray-dark
+          .h2.text-bold.text-center.color-text-primary
             | Akihiko Horiuchi
           .clearfix
             .col-md-4.col-sm-12.float-left.h4.lh-3.mt-4
-              a.text-gray href="https://www.facebook.com/hico.horiuchi"
+              a.color-text-secondary href="https://www.facebook.com/hico.horiuchi"
                 i.fab.fa-facebook.mr-2
                 | Akihiko Horiuchi
               br
-              a.text-gray href="https://github.com/hico-horiuchi"
+              a.color-text-secondary href="https://github.com/hico-horiuchi"
                 i.fab.fa-github.mr-2
                 | hico-horiuchi
               br
-              a.text-gray href="https://www.instagram.com/hico_horiuchi/"
+              a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/"
                 i.fab.fa-instagram.mr-2
                 | hico_horiuchi
               br
-              a.text-gray href="https://www.linkedin.com/in/hico-horiuchi/"
+              a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/"
                 i.fab.fa-linkedin.mr-2
                 | Akihiko Horiuchi
               br
-              a.text-gray href="https://speakerdeck.com/hiconyan"
+              a.color-text-secondary href="https://speakerdeck.com/hiconyan"
                 i.fab.fa-speaker-deck.mr-2
                 | hiconyan
               br
-              a.text-gray href="https://twitter.com/hico_horiuchi"
+              a.color-text-secondary href="https://twitter.com/hico_horiuchi"
                 i.fab.fa-twitter.mr-2
                 | hico_horiuchi
             .col-md-8.col-sm-12.float-left.mt-4
@@ -49,19 +49,19 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.text-gray Software Engineer, NTT Communications
-                    .h5.mb-2.text-gray-light
+                    .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
+                    .h5.mb-2.color-text-tertiary
                       .mb-1 April 2021 - Present
                       | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.text-gray Software Engineer, NTT Ltd Japan
-                    .h5.mb-2.text-gray-light
+                    .h4.mb-2.color-text-secondary Software Engineer, NTT Ltd Japan
+                    .h5.mb-2.color-text-tertiary
                       .mb-1 October 2020 - March 2021
                       | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
-                    .h5.text-gray-light
+                    .h5.color-text-tertiary
                       .mb-1 July 2019 - September 2020
                       | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                       br
@@ -76,16 +76,16 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.text-gray Software Engineer, NTT Communications
-                    .h5.text-gray-light
+                    .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
+                    .h5.color-text-tertiary
                       .mb-1 April 2016 - June 2019
                       | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.text-gray Software Engineer, Aqutras Inc.
-                    .h5.text-gray-light
+                    .h4.mb-2.color-text-secondary Software Engineer, Aqutras Inc.
+                    .h5.color-text-tertiary
                       .mb-2 April 2014 - March 2016
                       | &bull; &nbsp; Develop web applications for advertisements and schedule management
                       br
@@ -94,11 +94,11 @@ html
                   .TimelineItem-badge
                     i.fas.fa-school
                   .TimelineItem-body
-                    .h4.mb-2.text-gray Kagawa University
-                    .h5.text-gray-light
+                    .h4.mb-2.color-text-secondary Kagawa University
+                    .h5.color-text-tertiary
                       .mb-2 April 2010 - March 2016
                       | &bull; &nbsp; Master of computer science
-          .h4.mt-4.text-center.text-gray-light
+          .h4.mt-4.text-center.color-text-tertiary
             i.far.fa-copyright.mr-2
             | 2020
     script src="https://kit.fontawesome.com/98ede86df1.js" crossorigin="anonymous"
