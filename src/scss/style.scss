@@ -8,9 +8,9 @@
 }
 
 .Box-body {
-  border-bottom: 1px solid #eaecef;
-  border-left: 1px solid #eaecef;
-  border-right: 1px solid #eaecef;
+  border-bottom: 1px solid var(--color-border-secondary);
+  border-left: 1px solid var(--color-border-secondary);
+  border-right: 1px solid var(--color-border-secondary);
 }
 
 .Box-header {
@@ -36,19 +36,22 @@
 .Timeline {
   .TimelineItem:first-child {
     .TimelineItem-badge {
-      background-color: #586069;
-      color: #e1e4e8;
+      background-color: var(--color-icon-secondary);
+      color: var(--color-timeline-badge-bg);
     }
   }
 
-  .TimelineItem {
-    .TimelineItem-badge {
-      color: #586069;
-    }
+  .TimelineItem-badge {
+    border: 1px solid var(--color-bg-canvas);
   }
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: 300 !important;
 }
 
