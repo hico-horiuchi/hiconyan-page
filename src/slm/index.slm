@@ -9,6 +9,11 @@ html
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
+    meta property="og:type" content="website"
+    meta property="og:title" content="Akihiko Horiuchi"
+    meta property="og:site_name" content="Akihiko Horiuchi"
+    meta property="og:url" content="https://hiconyan.page/"
+    meta property="og:image" content="https://hiconyan.page/banner.png"
   body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
     .container-md.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
