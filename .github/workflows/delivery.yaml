@@ -1,0 +1,128 @@
+name: Delivery
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - synchronize
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      # https://github.com/actions/cache
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: npm ci
+        run: npm ci
+      - name: npm run build
+        run: npm run build
+      # https://github.com/actions/upload-artifact
+      - uses: actions/upload-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: public/*
+          retention-days: 1
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      # https://github.com/actions/cache
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      # https://github.com/actions/download-artifact
+      - uses: actions/download-artifact@v2
+        with:
+          name: public_${{ github.sha }}
+          path: public
+      - name: npm ci
+        run: npm ci
+      - name: firebase hosting:channel:create
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          $(npm bin)/firebase hosting:channel:create --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+        continue-on-error: true
+      - name: firebase hosting:channel:deploy
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          $(npm bin)/firebase hosting:channel:deploy --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+      - name: firebase deploy
+        if: ${{ github.event_name == 'push' }}
+        run: $(npm bin)/firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+  notify:
+    runs-on: ubuntu-latest
+    needs:
+      - deploy
+    if: ${{ github.event_name == 'pull_request' }}
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      # https://github.com/actions/cache
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: npm ci
+        run: npm ci
+      - name: firebase hosting:channel:open
+        id: firebase_hosting_channel_open
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          url=$($(npm bin)/firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
+          echo "::set-output name=url::${url}"
+      # https://github.com/actions/github-script
+      - uses: actions/github-script@v4
+        env:
+          URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
+        with:
+          script: |
+            const body = `Preview: ${process.env.URL}`
+
+            const options = github.issues.listComments.endpoint.merge({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            })
+
+            const comments = await github.paginate(options)
+            const comment = comments.find(c => c.body == body)
+
+            if (comment) {
+              return
+            }
+
+            await github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            })
