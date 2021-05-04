@@ -1,6 +1,6 @@
 ## Akihiko Horiuchi's Portfolio
 
-[![CircleCI](https://circleci.com/gh/hico-horiuchi/hiconyan-page.svg?style=svg)](https://circleci.com/gh/hico-horiuchi/hiconyan-page)
+[![Delivery](https://github.com/hico-horiuchi/hiconyan-page/actions/workflows/delivery.yaml/badge.svg)](https://github.com/hico-horiuchi/hiconyan-page/actions/workflows/delivery.yaml)
 
 ### How to deploy
 

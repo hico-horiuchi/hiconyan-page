@@ -1,0 +1,30 @@
+name: Garbage Collect
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - closed
+jobs:
+  firebase_hosting:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+      # https://github.com/actions/cache
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: npm ci
+        run: npm ci
+      - name: firebase hosting:channel:delete
+        run: |
+          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          $(npm bin)/firebase hosting:channel:delete -f --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+        continue-on-error: true
