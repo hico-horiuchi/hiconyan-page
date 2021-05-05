@@ -4,7 +4,8 @@ html
     title Akihiko Horiuchi
     link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
     link rel="icon" href="favicon.ico"
-    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400"
+    link rel="preconnect" href="https://fonts.gstatic.com"
+    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
     link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
