@@ -26,7 +26,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: npm ci
-        run: npm ci
+        run: npm ci --production
       - name: npm run build
         run: npm run build
       # https://github.com/actions/upload-artifact
@@ -57,22 +57,22 @@ jobs:
         with:
           name: public_${{ github.sha }}
           path: public
-      - name: npm ci
-        run: npm ci
+      - name: npm install
+        run: npm install -g firebase-tools@$(node -p -e "require('./package.json').devDependencies['firebase-tools']")
       - name: firebase hosting:channel:create
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          $(npm bin)/firebase hosting:channel:create --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+          firebase hosting:channel:create --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
         continue-on-error: true
       - name: firebase hosting:channel:deploy
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          $(npm bin)/firebase hosting:channel:deploy --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
+          firebase hosting:channel:deploy --token ${{ secrets.FIREBASE_TOKEN }} ${channel}
       - name: firebase deploy
         if: ${{ github.event_name == 'push' }}
-        run: $(npm bin)/firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
   notify:
     runs-on: ubuntu-latest
     needs:
@@ -91,13 +91,13 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
-      - name: npm ci
-        run: npm ci
+      - name: npm install
+        run: npm install -g firebase-tools@$(node -p -e "require('./package.json').devDependencies['firebase-tools']")
       - name: firebase hosting:channel:open
         id: firebase_hosting_channel_open
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
-          url=$($(npm bin)/firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
+          url=$(firebase hosting:channel:open --token ${{ secrets.FIREBASE_TOKEN }} ${channel} | awk '{ print $3 }')
           echo "::set-output name=url::${url}"
       # https://github.com/actions/github-script
       - uses: actions/github-script@v4
