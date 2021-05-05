@@ -55,55 +55,79 @@ html
                     i.fas.fa-building
                   .TimelineItem-body
                     .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
-                    .h5.mb-2.color-text-tertiary
-                      .mb-1 April 2021 - Present
-                      | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
+                    .h5.mb-2.color-text-tertiary.lh-2
+                      .text-bold.mb-1 April 2021 - Present
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-network-wired.fa-lg
+                          | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
                     .h4.mb-2.color-text-secondary Software Engineer, NTT Ltd Japan
-                    .h5.mb-2.color-text-tertiary
-                      .mb-1 October 2020 - March 2021
-                      | &bull; &nbsp; Develop Virtual Network Appliance service of Enterprise Cloud 2.0
-                    .h5.color-text-tertiary
-                      .mb-1 July 2019 - September 2020
-                      | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
-                      br
-                      | &emsp; &bull; &nbsp; Imprement APIs for provide physical servers on demand
-                      br
-                      | &emsp; &bull; &nbsp; Integrate with physical servers using IPMI and Redfish
-                      br
-                      | &emsp; &bull; &nbsp; Automate OS installations and settings using PXE, Kickstart and cloud-init
-                      br
-                      | &emsp; &bull; &nbsp; Improve CI/CD, promote ChatOps and so on
+                    .h5.mb-2.color-text-tertiary.lh-2
+                      .text-bold.mb-1 October 2020 - March 2021
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-network-wired.fa-lg
+                          | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
+                    .h5.color-text-tertiary.lh-2
+                      .text-bold.mb-1 July 2019 - September 2020
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-server.fa-lg
+                          | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                        li
+                          ul.text-small
+                            li Imprement APIs for provide physical servers on demand
+                            li Integrate with physical servers using IPMI and Redfish
+                            li Automate OS installations and settings using PXE, Kickstart and cloud-init
+                            li Improve CI/CD, promote ChatOps and so on
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
                     .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
-                    .h5.color-text-tertiary
-                      .mb-1 April 2016 - June 2019
-                      | &bull; &nbsp; Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                    .h5.color-text-tertiary.lh-2
+                      .text-bold.mb-1 April 2016 - June 2019
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-server.fa-lg
+                          | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
                     .h4.mb-2.color-text-secondary Software Engineer, Aqutras Inc.
-                    .h5.color-text-tertiary
-                      .mb-2 April 2014 - March 2016
-                      | &bull; &nbsp; Develop web applications for advertisements and schedule management
-                      br
-                      | &bull; &nbsp; Build monitoring and logging infrastructure for web applications
+                    .h5.color-text-tertiary.lh-2
+                      .text-bold.mb-2 April 2014 - March 2016
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-browser.fa-lg
+                          | Develop web applications for advertisements and schedule management
+                        li
+                          span.fa-li
+                            i.far.fa-monitor-heart-rate.fa-lg
+                          | Build monitoring and logging infrastructure for web applications
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-school
                   .TimelineItem-body
                     .h4.mb-2.color-text-secondary Kagawa University
-                    .h5.color-text-tertiary
-                      .mb-2 April 2010 - March 2016
-                      | &bull; &nbsp; Master of computer science
+                    .h5.color-text-tertiary.lh-2
+                      .text-bold.mb-2 April 2010 - March 2016
+                      ul.fa-ul
+                        li
+                          span.fa-li
+                            i.far.fa-graduation-cap.fa-lg
+                          | Master of computer science
           .h4.mt-4.text-center.color-text-tertiary
             i.far.fa-copyright.mr-2
             | 2020
-    script src="https://kit.fontawesome.com/98ede86df1.js" crossorigin="anonymous"
+    script src="https://kit.fontawesome.com/d2bc3ff7fe.js" crossorigin="anonymous"
