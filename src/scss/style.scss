@@ -44,6 +44,24 @@
   .TimelineItem-badge {
     border: 1px solid var(--color-bg-canvas);
   }
+
+  .TimelineItem-body {
+    .fa-ul {
+      .fa-li {
+        left: -3em;
+        width: 3em;
+      }
+
+      ul {
+        list-style-type: circle;
+        margin-left: 1.5em;
+
+        li {
+          padding-left: 0.5em;
+        }
+      }
+    }
+  }
 }
 
 .h1,
@@ -55,8 +73,12 @@
   font-weight: 300 !important;
 }
 
+.lh-2 {
+  line-height: 2;
+}
+
 .lh-3 {
-  line-height: 2.8;
+  line-height: 3;
 }
 
 .pt-10 {
