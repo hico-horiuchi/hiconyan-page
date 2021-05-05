@@ -22,32 +22,32 @@ html
           img.rounded-top-2 src="header.jpg"
           img.circle.mx-auto.nyan-icon src="icon.jpg"
         .Box-body.pb-6.pt-10.px-6.rounded-bottom-2
-          .h2.text-medium.text-center.color-text-primary
+          .color-text-primary.h2.text-center.text-medium
             | Akihiko Horiuchi
           .clearfix
             .col-md-4.col-sm-12.float-left.h4.lh-3.mt-4
               a.color-text-secondary href="https://www.facebook.com/hico.horiuchi"
-                i.fab.fa-facebook.fa-lg.mr-2
+                i.fab.fa-lg.fa-facebook.mr-2
                 | Akihiko Horiuchi
               br
               a.color-text-secondary href="https://github.com/hico-horiuchi"
-                i.fab.fa-github.fa-lg.mr-2
+                i.fab.fa-lg.fa-github.mr-2
                 | hico-horiuchi
               br
               a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/"
-                i.fab.fa-instagram.fa-lg.mr-2
+                i.fab.fa-lg.fa-instagram.mr-2
                 | hico_horiuchi
               br
               a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/"
-                i.fab.fa-linkedin.fa-lg.mr-2
+                i.fab.fa-lg.fa-linkedin.mr-2
                 | Akihiko Horiuchi
               br
               a.color-text-secondary href="https://speakerdeck.com/hiconyan"
-                i.fab.fa-speaker-deck.fa-lg.mr-2
+                i.fab.fa-lg.fa-speaker-deck.mr-2
                 | hiconyan
               br
               a.color-text-secondary href="https://twitter.com/hico_horiuchi"
-                i.fab.fa-twitter.fa-lg.mr-2
+                i.fab.fa-lg.fa-twitter.mr-2
                 | hico_horiuchi
             .col-md-8.col-sm-12.float-left.mt-4
               .Timeline
@@ -55,32 +55,32 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
-                    .h5.mb-2.color-text-tertiary.lh-2
-                      .text-medium.mb-1 April 2021 - Present
+                    .color-text-secondary.h4.mb-2 Software Engineer, NTT Communications
+                    .color-text-tertiary.h5.lh-2.mb-2
+                      .mb-1.text-medium April 2021 - Present
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-network-wired.fa-lg
+                            i.far.fa-lg.fa-network-wired
                           | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.color-text-secondary Software Engineer, NTT Ltd Japan
-                    .h5.mb-2.color-text-tertiary.lh-2
-                      .text-medium.mb-1 October 2020 - March 2021
+                    .color-text-secondary.h4.mb-2 Software Engineer, NTT Ltd Japan
+                    .color-text-tertiary.h5.lh-2.mb-2
+                      .mb-1.text-medium October 2020 - March 2021
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-network-wired.fa-lg
+                            i.far.fa-lg.fa-network-wired
                           | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
                     .h5.color-text-tertiary.lh-2
-                      .text-medium.mb-1 July 2019 - September 2020
+                      .mb-1.text-medium July 2019 - September 2020
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-server.fa-lg
+                            i.far.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                         li
                           ul.text-small
@@ -92,43 +92,43 @@ html
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.color-text-secondary Software Engineer, NTT Communications
+                    .color-text-secondary.h4.mb-2 Software Engineer, NTT Communications
                     .h5.color-text-tertiary.lh-2
-                      .text-medium.mb-1 April 2016 - June 2019
+                      .mb-1.text-medium April 2016 - June 2019
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-server.fa-lg
+                            i.far.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
                   .TimelineItem-body
-                    .h4.mb-2.color-text-secondary Software Engineer, Aqutras Inc.
+                    .color-text-secondary.h4.mb-2 Software Engineer, Aqutras Inc.
                     .h5.color-text-tertiary.lh-2
                       .text-medium.mb-2 April 2014 - March 2016
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-browser.fa-lg
+                            i.far.fa-lg.fa-browser
                           | Develop web applications for advertisements and schedule management
                         li
                           span.fa-li
-                            i.far.fa-monitor-heart-rate.fa-lg
+                            i.far.fa-lg.fa-monitor-heart-rate
                           | Build monitoring and logging infrastructure for web applications
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-school
                   .TimelineItem-body
-                    .h4.mb-2.color-text-secondary Kagawa University
+                    .color-text-secondary.h4.mb-2 Kagawa University
                     .h5.color-text-tertiary.lh-2
                       .text-medium.mb-2 April 2010 - March 2016
                       ul.fa-ul
                         li
                           span.fa-li
-                            i.far.fa-graduation-cap.fa-lg
+                            i.far.fa-lg.fa-graduation-cap
                           | Master of computer science
-          .h4.mt-4.text-center.color-text-tertiary
+          .color-text-tertiary.h4.mt-4.text-center
             i.far.fa-copyright.mr-2
-            | 2020
+            | 2021
     script src="https://kit.fontawesome.com/d2bc3ff7fe.js" crossorigin="anonymous"
