@@ -26,27 +26,27 @@ html
             | Akihiko Horiuchi
           .clearfix
             .col-md-4.col-sm-12.float-left.h4.lh-3.mt-4
-              a.color-text-secondary href="https://www.facebook.com/hico.horiuchi"
+              a.color-text-secondary href="https://www.facebook.com/hico.horiuchi" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-facebook.mr-2
                 | Akihiko Horiuchi
               br
-              a.color-text-secondary href="https://github.com/hico-horiuchi"
+              a.color-text-secondary href="https://github.com/hico-horiuchi" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-github.mr-2
                 | hico-horiuchi
               br
-              a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/"
+              a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-instagram.mr-2
                 | hico_horiuchi
               br
-              a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/"
+              a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-linkedin.mr-2
                 | Akihiko Horiuchi
               br
-              a.color-text-secondary href="https://speakerdeck.com/hiconyan"
+              a.color-text-secondary href="https://speakerdeck.com/hiconyan" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-speaker-deck.mr-2
                 | hiconyan
               br
-              a.color-text-secondary href="https://twitter.com/hico_horiuchi"
+              a.color-text-secondary href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
                 i.fab.fa-lg.fa-twitter.mr-2
                 | hico_horiuchi
             .col-md-8.col-sm-12.float-left.mt-4
