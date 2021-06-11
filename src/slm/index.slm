@@ -70,7 +70,11 @@ html
                         li
                           span.fa-li.color-text-secondary
                             i.fad.fa-lg.fa-network-wired
-                          | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
+                          | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
+                        li
+                          ul.text-small
+                            li Design APIs and workflows for providing abstracted network appliances
+                            li Manage service development, collaborate and coordinate with other microservice teams
                 .TimelineItem
                   .TimelineItem-badge
                     i.fas.fa-building
@@ -82,7 +86,7 @@ html
                         li
                           span.fa-li.color-text-secondary
                             i.fad.fa-lg.fa-network-wired
-                          | Develop Virtual Network Appliance service of Enterprise Cloud 2.0
+                          | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
                     .color-text-tertiary.h5
                       .mt-3.text-medium July 2019 - September 2020
                       ul.fa-ul.mt-3.text-regular
@@ -92,7 +96,7 @@ html
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                         li
                           ul.text-small
-                            li Imprement APIs for provide physical servers on demand
+                            li Imprement APIs for providing physical servers on demand
                             li Integrate with physical servers using IPMI and Redfish
                             li Automate OS installations and settings using PXE, Kickstart and cloud-init
                             li Improve CI/CD, promote ChatOps and so on
