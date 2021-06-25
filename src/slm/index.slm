@@ -29,39 +29,39 @@ html
               ul.fa-ul.h4.text-regular
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-facebook
+                    i.fa-brands.fa-xl.fa-facebook
                   a.color-text-secondary href="https://www.facebook.com/hico.horiuchi" rel="noopener noreferrer" target="_blank"
                     | Akihiko Horiuchi
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-github
+                    i.fa-brands.fa-xl.fa-github
                   a.color-text-secondary href="https://github.com/hico-horiuchi" rel="noopener noreferrer" target="_blank"
                     | hico-horiuchi
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-instagram
+                    i.fa-brands.fa-xl.fa-instagram
                   a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/" rel="noopener noreferrer" target="_blank"
                     | hico_horiuchi
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-linkedin
+                    i.fa-brands.fa-xl.fa-linkedin
                   a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/" rel="noopener noreferrer" target="_blank"
                     | Akihiko Horiuchi
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-speaker-deck
+                    i.fa-brands.fa-xl.fa-speaker-deck
                   a.color-text-secondary href="https://speakerdeck.com/hiconyan" rel="noopener noreferrer" target="_blank"
                     | hiconyan
                 li
                   span.fa-li.color-text-secondary
-                    i.fab.fa-lg.fa-twitter
+                    i.fa-brands.fa-xl.fa-twitter
                   a.color-text-secondary href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
                     | hico_horiuchi
             .col-12.col-md-8.float-left.mt-8.mt-md-6
               .Timeline
                 .TimelineItem
                   .TimelineItem-badge
-                    i.fad.fa-building
+                    i.fa-solid.fa-building
                   .TimelineItem-body
                     .color-text-secondary.h4.text-regular Software Engineer, NTT Communications
                     .color-text-tertiary.h5.mt-3
@@ -69,7 +69,7 @@ html
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-network-wired
+                            i.fa-duotone.fa-lg.fa-network-wired
                           | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
                         li
                           ul.text-small
@@ -77,7 +77,7 @@ html
                             li Manage service development, collaborate and coordinate with other microservice teams
                 .TimelineItem
                   .TimelineItem-badge
-                    i.fas.fa-building
+                    i.fa-solid.fa-building
                   .TimelineItem-body
                     .color-text-secondary.h4.text-regular Software Engineer, NTT Ltd Japan
                     .color-text-tertiary.h5.mt-3
@@ -85,14 +85,14 @@ html
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-network-wired
+                            i.fa-duotone.fa-lg.fa-network-wired
                           | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
                     .color-text-tertiary.h5
                       .mt-3.text-medium July 2019 - September 2020
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-server
+                            i.fa-duotone.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                         li
                           ul.text-small
@@ -102,7 +102,7 @@ html
                             li Improve CI/CD, promote ChatOps and so on
                 .TimelineItem
                   .TimelineItem-badge
-                    i.fas.fa-building
+                    i.fa-solid.fa-building
                   .TimelineItem-body
                     .color-text-secondary.h4.text-regular Software Engineer, NTT Communications
                     .color-text-tertiary.h5
@@ -110,11 +110,11 @@ html
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-server
+                            i.fa-duotone.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
-                    i.fas.fa-building
+                    i.fa-solid.fa-building
                   .TimelineItem-body
                     .color-text-secondary.h4.text-regular Software Engineer, Aqutras Inc.
                     .color-text-tertiary.h5
@@ -122,15 +122,15 @@ html
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-browser
+                            i.fa-duotone.fa-lg.fa-browser
                           | Develop web applications for advertisements and schedule management
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-monitor-heart-rate
+                            i.fa-duotone.fa-lg.fa-monitor-heart-rate
                           | Build monitoring and logging infrastructure for web applications
                 .TimelineItem
                   .TimelineItem-badge
-                    i.fas.fa-school
+                    i.fa-solid.fa-school
                   .TimelineItem-body
                     .color-text-secondary.h4.text-regular Kagawa University
                     .color-text-tertiary.h5
@@ -138,9 +138,9 @@ html
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-text-secondary
-                            i.fad.fa-lg.fa-graduation-cap
+                            i.fa-duotone.fa-lg.fa-graduation-cap
                           | Master of computer science
           .color-text-tertiary.h4.mt-4.text-center.text-regular
-            i.far.fa-copyright.mr-2
+            i.fa-regular.fa-copyright.mr-2
             | 2021
     script src="https://kit.fontawesome.com/d2bc3ff7fe.js" crossorigin="anonymous"
