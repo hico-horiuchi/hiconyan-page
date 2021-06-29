@@ -19,8 +19,9 @@ html
     .container-md.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
-          img.rounded-top-2 src="header.jpg"
-          img.circle.mx-auto.nyan-icon src="icon.jpg"
+          img.header.rounded-top-2 src="header.jpg"
+          svg.circle.mx-auto.icon viewBox="0 0 600 600"
+            use xlink:href="icon.svg#icon"
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-text-primary.mb-0.text-center
             span.h2.text-medium
