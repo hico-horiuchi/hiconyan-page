@@ -17,14 +17,24 @@
   border: none;
   position: relative;
 
-  img:first-child {
+  img.header {
+    filter: grayscale(100%);
     height: 22.5rem;
     object-fit: cover;
     object-position: 0% 100%;
+    transition: filter 0.2s ease;
     width: 100%;
   }
 
-  img.nyan-icon {
+  img.header:active,
+  img.header:hover {
+    filter: grayscale(0);
+  }
+
+  svg.icon {
+    background-color: var(--color-bg-canvas);
+    fill: var(--color-text-primary);
+    fill-opacity: 0.95;
     left: 0;
     position: absolute;
     right: 0;
