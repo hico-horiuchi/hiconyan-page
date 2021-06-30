@@ -22,6 +22,7 @@ html
           img.header.rounded-top-2 src="header.jpg"
           svg.circle.mx-auto.icon viewBox="0 0 600 600"
             use xlink:href="icon.svg#icon"
+          .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-text-primary.mb-0.text-center
             span.h2.text-medium
