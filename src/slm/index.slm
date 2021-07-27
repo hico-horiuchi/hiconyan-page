@@ -79,7 +79,7 @@ html
                           | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
                         li
                           ul.text-small
-                            li Design APIs and workflows for providing abstracted network appliances
+                            li Design APIs and workflows for providing self-managed and managed virtual network appliances
                             li Manage service development, collaborate and coordinate with other microservice teams
                 .TimelineItem
                   .TimelineItem-badge

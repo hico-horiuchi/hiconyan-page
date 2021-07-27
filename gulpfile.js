@@ -2,7 +2,7 @@ const { src, dest, parallel } = require('gulp');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
 const fibers = require('fibers');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const slm = require('gulp-slm');
 
 const config = new Map([
@@ -21,8 +21,6 @@ const config = new Map([
     ]),
   ],
 ]);
-
-sass.compiler = require('sass');
 
 css = () => {
   return src(config.get('src').get('scss'))
