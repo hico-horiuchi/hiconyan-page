@@ -15,6 +15,7 @@ html
     meta property="og:title" content="Akihiko Horiuchi (@hiconyan)"
     meta property="og:type" content="profile"
     meta property="og:url" content="https://hiconyan.page/"
+    script defer="" src="https://kit.fontawesome.com/d2bc3ff7fe.js"
   body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
     .container-md.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
@@ -149,4 +150,3 @@ html
           .color-text-tertiary.h4.mt-4.text-center.text-regular
             i.fa-regular.fa-copyright.mr-2
             | 2021
-    script src="https://kit.fontawesome.com/d2bc3ff7fe.js" crossorigin="anonymous"
