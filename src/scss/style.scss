@@ -113,3 +113,7 @@
 .text-regular:not(i) {
   font-weight: 400 !important;
 }
+
+i[class^="fa-"] {
+  letter-spacing: 0 !important;
+}
