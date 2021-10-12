@@ -6,7 +6,7 @@ html
     link rel="icon" href="favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@17.11.0/dist/primer.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
