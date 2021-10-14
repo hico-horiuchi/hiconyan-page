@@ -8,13 +8,13 @@
 }
 
 .Box-body {
-  border-bottom: 1px solid var(--color-border-secondary);
-  border-left: 1px solid var(--color-border-secondary);
-  border-right: 1px solid var(--color-border-secondary);
+  border-bottom: 1px solid var(--color-border-muted);
+  border-left: 1px solid var(--color-border-muted);
+  border-right: 1px solid var(--color-border-muted);
 }
 
 .Box-header {
-  border: 1px solid var(--color-border-secondary);
+  border: 1px solid var(--color-border-muted);
   margin: 0;
   position: relative;
 
@@ -28,10 +28,10 @@
   }
 
   .icon-border {
-    border-left: 1px solid var(--color-border-secondary);
+    border-left: 1px solid var(--color-border-muted);
     border-radius: 5rem 5rem 0 0;
-    border-right: 1px solid var(--color-border-secondary);
-    border-top: 1px solid var(--color-border-secondary);
+    border-right: 1px solid var(--color-border-muted);
+    border-top: 1px solid var(--color-border-muted);
     height: 5rem;
   }
 
@@ -44,8 +44,8 @@
   }
 
   svg.icon {
-    background-color: var(--color-bg-canvas);
-    fill: var(--color-text-primary);
+    background-color: var(--color-canvas-default);
+    fill: var(--color-fg-default);
     fill-opacity: 0.95;
     height: 10rem;
   }
@@ -56,7 +56,7 @@
     padding: 0 0 16px 0;
 
     .TimelineItem-badge {
-      background-color: var(--color-icon-secondary);
+      background-color: var(--color-fg-muted);
       color: var(--color-timeline-badge-bg);
     }
   }
