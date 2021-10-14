@@ -20,7 +20,7 @@ html
     .container-md.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
-          img.header.rounded-top-2 src="header.jpg"
+          img.header.rounded-top-2 src="port-industry-internet-connection.jpg"
           svg.circle.mx-auto.icon viewBox="0 0 600 600"
             use xlink:href="icon.svg#icon"
           .mx-auto.icon-border
