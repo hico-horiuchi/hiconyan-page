@@ -6,7 +6,7 @@ html
     link rel="icon" href="favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@17.11.0/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@18.0.1/dist/primer.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -25,7 +25,7 @@ html
             use xlink:href="icon.svg#icon"
           .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
-          p.color-text-primary.mb-0.text-center
+          p.color-fg-default.mb-0.text-center
             span.h2.text-medium
               | Akihiko Horiuchi
             br
@@ -35,34 +35,34 @@ html
             .col-12.col-md-4.float-left.mt-8.mt-md-6
               ul.fa-ul.h4.text-regular
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-facebook
-                  a.color-text-secondary href="https://www.facebook.com/hico.horiuchi" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://www.facebook.com/hico.horiuchi" rel="noopener noreferrer" target="_blank"
                     | Akihiko Horiuchi
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-github
-                  a.color-text-secondary href="https://github.com/hico-horiuchi" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://github.com/hico-horiuchi" rel="noopener noreferrer" target="_blank"
                     | hico-horiuchi
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-instagram
-                  a.color-text-secondary href="https://www.instagram.com/hico_horiuchi/" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://www.instagram.com/hico_horiuchi/" rel="noopener noreferrer" target="_blank"
                     | hico_horiuchi
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-linkedin
-                  a.color-text-secondary href="https://www.linkedin.com/in/hico-horiuchi/" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://www.linkedin.com/in/hico-horiuchi/" rel="noopener noreferrer" target="_blank"
                     | Akihiko Horiuchi
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-speaker-deck
-                  a.color-text-secondary href="https://speakerdeck.com/hiconyan" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://speakerdeck.com/hiconyan" rel="noopener noreferrer" target="_blank"
                     | hiconyan
                 li
-                  span.fa-li.color-text-secondary
+                  span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-twitter
-                  a.color-text-secondary href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
+                  a.color-fg-muted href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
                     | hico_horiuchi
             .col-12.col-md-8.float-left.mt-8.mt-md-6
               .Timeline
@@ -70,12 +70,12 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-text-secondary.h4.text-regular Software Engineer, NTT Communications
-                    .color-text-tertiary.h5.mt-3
+                    .color-fg-muted.h4.text-regular Software Engineer, NTT Communications
+                    .color-fg-muted.h5.mt-3
                       .mt-3.text-medium April 2021 - Present
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
                           | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
                         li
@@ -86,19 +86,19 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-text-secondary.h4.text-regular Software Engineer, NTT Ltd Japan
-                    .color-text-tertiary.h5.mt-3
+                    .color-fg-muted.h4.text-regular Software Engineer, NTT Ltd Japan
+                    .color-fg-muted.h5.mt-3
                       .mt-3.text-medium October 2020 - March 2021
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
                           | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
-                    .color-text-tertiary.h5
+                    .color-fg-muted.h5
                       .mt-3.text-medium July 2019 - September 2020
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                         li
@@ -111,42 +111,42 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-text-secondary.h4.text-regular Software Engineer, NTT Communications
-                    .color-text-tertiary.h5
+                    .color-fg-muted.h4.text-regular Software Engineer, NTT Communications
+                    .color-fg-muted.h5
                       .mt-3.text-medium April 2016 - June 2019
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
                           | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-text-secondary.h4.text-regular Software Engineer, Aqutras Inc.
-                    .color-text-tertiary.h5
+                    .color-fg-muted.h4.text-regular Software Engineer, Aqutras Inc.
+                    .color-fg-muted.h5
                       .mt-3.text-medium April 2014 - March 2016
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-browser
                           | Develop web applications for advertisements and schedule management
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-monitor-heart-rate
                           | Build monitoring and logging infrastructure for web applications
                 .TimelineItem
                   .TimelineItem-badge
                     i.fa-solid.fa-school
                   .TimelineItem-body
-                    .color-text-secondary.h4.text-regular Kagawa University
-                    .color-text-tertiary.h5
+                    .color-fg-muted.h4.text-regular Kagawa University
+                    .color-fg-muted.h5
                       .mt-3.text-medium April 2010 - March 2016
                       ul.fa-ul.mt-3.text-regular
                         li
-                          span.fa-li.color-text-secondary
+                          span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-graduation-cap
                           | Master of computer science
-          .color-text-tertiary.h4.mt-4.text-center.text-regular
+          .color-fg-muted.h4.mt-4.text-center.text-regular
             i.fa-regular.fa-copyright.mr-2
             | 2021
