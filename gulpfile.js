@@ -1,7 +1,6 @@
 const { src, dest, parallel } = require('gulp');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
-const fibers = require('fibers');
 const sass = require('gulp-sass')(require('sass'));
 const slm = require('gulp-slm');
 
@@ -24,7 +23,7 @@ const config = new Map([
 
 css = () => {
   return src(config.get('src').get('scss'))
-    .pipe(sass({ fiber: fibers }))
+    .pipe(sass())
     .pipe(csso())
     .pipe(concat('app.min.css'))
     .pipe(dest(config.get('dest').get('css')));
