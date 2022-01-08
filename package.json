@@ -21,11 +21,11 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-slm": "^1.2.3",
-    "sass": "^1.44.0"
+    "sass": "^1.47.0"
   },
   "devDependencies": {
-    "firebase-tools": "^9.23.0"
+    "firebase-tools": "^10.0.1"
   }
 }

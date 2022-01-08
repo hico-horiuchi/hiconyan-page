@@ -64,6 +64,11 @@ html
                     i.fa-brands.fa-xl.fa-twitter
                   a.color-fg-muted href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
                     | hico_horiuchi
+                li
+                  span.fa-li.color-fg-muted
+                    i.fak.fa-xl.fa-zenn
+                  a.color-fg-muted href="https://zenn.dev/hiconyan" rel="noopener noreferrer" target="_blank"
+                    | hiconyan
             .col-12.col-md-8.float-left.mt-8.mt-md-6
               .Timeline
                 .TimelineItem
