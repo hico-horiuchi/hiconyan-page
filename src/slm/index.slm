@@ -6,7 +6,7 @@ html
     link rel="icon" href="favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
     link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@19.0.0/dist/primer.css"
+    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@19.1.1/dist/primer.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -17,7 +17,7 @@ html
     meta property="og:url" content="https://hiconyan.page/"
     script defer="" src="https://kit.fontawesome.com/d2bc3ff7fe.js"
   body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
-    .container-md.p-4
+    .container-lg.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
           img.header.rounded-top-2 src="port-industry-internet-connection.jpg"
@@ -32,7 +32,7 @@ html
             span.h3.text-medium
               | (@hiconyan)
           .clearfix
-            .col-12.col-md-4.float-left.mt-8.mt-md-6
+            .col-12.col-lg-3.col-md-4.float-left.mt-8.mt-md-6
               ul.fa-ul.h4.text-regular
                 li
                   span.fa-li.color-fg-muted
@@ -69,7 +69,7 @@ html
                     i.fak.fa-xl.fa-zenn
                   a.color-fg-muted href="https://zenn.dev/hiconyan" rel="noopener noreferrer" target="_blank"
                     | hiconyan
-            .col-12.col-md-8.float-left.mt-8.mt-md-6
+            .col-12.col-lg-9.col-md-8.float-left.mt-8.mt-md-6
               .Timeline
                 .TimelineItem
                   .TimelineItem-badge
