@@ -23,9 +23,9 @@
     "gulp-csso": "^4.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-slm": "^1.2.3",
-    "sass": "^1.47.0"
+    "sass": "^1.48.0"
   },
   "devDependencies": {
-    "firebase-tools": "^10.0.1"
+    "firebase-tools": "^10.1.0"
   }
 }
