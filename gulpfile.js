@@ -1,5 +1,6 @@
-const { src, dest, parallel } = require('gulp');
+const { src, dest, parallel, watch } = require('gulp');
 const concat = require('gulp-concat');
+const connect = require('gulp-connect');
 const csso = require('gulp-csso');
 const sass = require('gulp-sass')(require('sass'));
 const slm = require('gulp-slm');
@@ -35,6 +36,20 @@ html = () => {
     .pipe(dest(config.get('dest').get('html')));
 };
 
+preview = () => {
+  watch(config.get('src').get('scss'), css);
+  watch(config.get('src').get('slm'), html);
+};
+
+server = () => {
+  connect.server({
+    livereload: true,
+    root: 'public'
+  });
+};
+
 exports.css = css;
 exports.html = html;
-exports.default = parallel(html, css);
+
+exports.default = parallel(css, html);
+exports.preview = parallel(preview, server);
