@@ -25,9 +25,13 @@
     "gulp-csso": "^4.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-slm": "^1.2.3",
-    "sass": "^1.48.0"
+    "sass": "^1.49.0"
   },
   "devDependencies": {
-    "firebase-tools": "^10.1.0"
+    "firebase-tools": "^10.1.2",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "glob-parent": "^5.1.2"
   }
 }
