@@ -82,7 +82,13 @@ html
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
-                          | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
+                          | Develop&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank"
+                            | Firewall (vSRX)
+                          | &nbsp;and&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank"
+                            | Managed Load Balancer
+                          | &nbsp;services of Enterprise Cloud 2.0
                         li
                           ul.text-small
                             li Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
@@ -98,14 +104,26 @@ html
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
-                          | Develop Firewall (vSRX) and Managed Load Balancer services of Enterprise Cloud 2.0
+                          | Develop&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank"
+                            | Firewall (vSRX)
+                          | &nbsp;and&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank"
+                            | Managed Load Balancer
+                          | &nbsp;services of Enterprise Cloud 2.0
                     .color-fg-muted.h5
                       .mt-3.text-medium July 2019 - September 2020
                       ul.fa-ul.mt-3.text-regular
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
-                          | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                          | Develop&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank"
+                            | Baremetal Server
+                          | &nbsp;and&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank"
+                            | Dedicated Hypervisor
+                          | &nbsp;services of Enterprise Cloud 2.0
                         li
                           ul.text-small
                             li Imprement APIs for providing physical servers on demand
@@ -123,7 +141,13 @@ html
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
-                          | Develop Baremetal Server and Dedicated Hypervisor services of Enterprise Cloud 2.0
+                          | Develop&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank"
+                            | Baremetal Server
+                          | &nbsp;and&nbsp;
+                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank"
+                            | Dedicated Hypervisor
+                          | &nbsp;services of Enterprise Cloud 2.0
                 .TimelineItem
                   .TimelineItem-badge
                     i.fa-solid.fa-building
