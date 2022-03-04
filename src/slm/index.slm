@@ -92,7 +92,7 @@ html
                         li
                           ul.text-small
                             li Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
-                            li Manage service development, collaborate and coordinate with product team, operation team and other microservice teams
+                            li Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
                 .TimelineItem
                   .TimelineItem-badge
                     i.fa-solid.fa-building
@@ -126,7 +126,7 @@ html
                           | &nbsp;services of Enterprise Cloud 2.0
                         li
                           ul.text-small
-                            li Imprement APIs for providing physical servers on demand
+                            li Implement APIs for providing physical servers on demand
                             li Integrate with physical servers using IPMI and Redfish
                             li Automate OS installations and settings using PXE, Kickstart and cloud-init
                             li Improve CI/CD, promote ChatOps and so on
@@ -178,4 +178,4 @@ html
                           | Master of computer science
           .color-fg-muted.h4.mt-4.text-center.text-regular
             i.fa-regular.fa-copyright.mr-2
-            | 2021
+            | 2022
