@@ -1,0 +1,54 @@
+//--------------------------------------------------
+// Utilities: Spacing
+//--------------------------------------------------
+
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    @each $scale, $size in $spacer-map-extended {
+      @if ($scale < length($spacer-map)) {
+        .s#{$variant}-#{$scale} {
+          > *:not(:first-child) {
+            margin: $size !important;
+          }
+        }
+      }
+
+      .st#{$variant}-#{$scale} {
+        > *:not(:first-child) {
+          margin-top: $size !important;
+        }
+      }
+      .sr#{$variant}-#{$scale} {
+        > *:not(:first-child) {
+          margin-right: $size !important;
+        }
+      }
+      .sb#{$variant}-#{$scale} {
+        > *:not(:first-child) {
+          margin-bottom: $size !important;
+        }
+      }
+      .sl#{$variant}-#{$scale} {
+        > *:not(:first-child) {
+          margin-left: $size !important;
+        }
+      }
+
+      @if ($scale < length($spacer-map)) {
+        .sx#{$variant}-#{$scale} {
+          > *:not(:first-child) {
+            margin-right: $size !important;
+            margin-left: $size !important;
+          }
+        }
+      }
+
+      .sy#{$variant}-#{$scale} {
+        > *:not(:first-child) {
+          margin-top: $size !important;
+          margin-bottom: $size !important;
+        }
+      }
+    }
+  }
+}

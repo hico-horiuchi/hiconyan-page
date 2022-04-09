@@ -1,0 +1,35 @@
+//--------------------------------------------------
+// Timeline: TimelineItem
+//--------------------------------------------------
+
+.TimelineItem {
+  &:first-child {
+    padding: 0 0 $spacer-3 0;
+
+    .TimelineItem-badge {
+      background-color: var(--color-fg-muted);
+      color: var(--color-timeline-badge-bg);
+    }
+  }
+
+  .TimelineItem-badge {
+    margin-right: $spacer-3;
+  }
+
+  .TimelineItem-body {
+    .fa-ul {
+      ul {
+        list-style-type: circle;
+        margin-left: calc(var(--fa-li-width, 2em) / 2);
+
+        > li {
+          padding-left: calc(var(--fa-li-width, 2em) / 6);
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

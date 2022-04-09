@@ -7,6 +7,17 @@ const slm = require('gulp-slm');
 
 const config = new Map([
   [
+    "sass",
+    new Map([
+      [
+        "options",
+        {
+          includePaths: "./node_modules/",
+        },
+      ],
+    ]),
+  ],
+  [
     'src',
     new Map([
       ['scss', 'src/scss/*.scss'],
@@ -24,9 +35,9 @@ const config = new Map([
 
 css = () => {
   return src(config.get('src').get('scss'))
-    .pipe(sass())
-    .pipe(csso())
+    .pipe(sass(config.get("sass").get("options")))
     .pipe(concat('app.min.css'))
+    .pipe(csso())
     .pipe(dest(config.get('dest').get('css')));
 };
 

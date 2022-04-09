@@ -1,12 +1,10 @@
 doctype html
-html
+html lang="en"
   head
     title Akihiko Horiuchi (@hiconyan)
     link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
     link rel="icon" href="favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
-    link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
-    link rel="stylesheet" type="text/css" href="https://unpkg.com/@primer/css@19.2.0/dist/primer.css"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -20,20 +18,20 @@ html
     .container-lg.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
-          img.header.rounded-top-2 src="port-industry-internet-connection.jpg"
-          svg.circle.mx-auto.icon viewBox="0 0 600 600"
+          img.banner.rounded-top-2 src="port-industry-internet-connection.jpg"
+          svg.circle.icon.mx-auto viewBox="0 0 600 600"
             use xlink:href="icon.svg#icon"
           .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-fg-default.mb-0.text-center
-            span.h2.text-medium
+            span.h2.text-semibold
               | Akihiko Horiuchi
             br
-            span.h3.text-medium
+            span.h3.text-semibold
               | (@hiconyan)
           .clearfix
             .col-12.col-lg-3.col-md-4.float-left.mt-8.mt-md-6
-              ul.fa-ul.h4.text-regular
+              ul.fa-ul.h4.st-4.text-normal
                 li
                   span.fa-li.color-fg-muted
                     i.fa-brands.fa-xl.fa-facebook
@@ -75,10 +73,10 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-fg-muted.h4.text-regular Software Engineer, NTT Communications
+                    .color-fg-muted.h4.text-normal Software Engineer, NTT Communications
                     .color-fg-muted.h5.mt-3
-                      .mt-3.text-medium April 2021 - Present
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold April 2021 - Present
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
@@ -90,17 +88,17 @@ html
                             | Managed Load Balancer
                           | &nbsp;services of Enterprise Cloud 2.0
                         li
-                          ul.text-small
+                          ul.st-1.text-small
                             li Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
                             li Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
                 .TimelineItem
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-fg-muted.h4.text-regular Software Engineer, NTT Ltd Japan
+                    .color-fg-muted.h4.text-normal Software Engineer, NTT Ltd Japan
                     .color-fg-muted.h5.mt-3
-                      .mt-3.text-medium October 2020 - March 2021
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold October 2020 - March 2021
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-network-wired
@@ -112,8 +110,8 @@ html
                             | Managed Load Balancer
                           | &nbsp;services of Enterprise Cloud 2.0
                     .color-fg-muted.h5
-                      .mt-3.text-medium July 2019 - September 2020
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold July 2019 - September 2020
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
@@ -125,7 +123,7 @@ html
                             | Dedicated Hypervisor
                           | &nbsp;services of Enterprise Cloud 2.0
                         li
-                          ul.text-small
+                          ul.st-1.text-small
                             li Implement APIs for providing physical servers on demand
                             li Integrate with physical servers using IPMI and Redfish
                             li Automate OS installations and settings using PXE, Kickstart and cloud-init
@@ -134,10 +132,10 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-fg-muted.h4.text-regular Software Engineer, NTT Communications
+                    .color-fg-muted.h4.text-normal Software Engineer, NTT Communications
                     .color-fg-muted.h5
-                      .mt-3.text-medium April 2016 - June 2019
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold April 2016 - June 2019
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-server
@@ -152,10 +150,10 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-building
                   .TimelineItem-body
-                    .color-fg-muted.h4.text-regular Software Engineer, Aqutras Inc.
+                    .color-fg-muted.h4.text-normal Software Engineer, Aqutras Inc.
                     .color-fg-muted.h5
-                      .mt-3.text-medium April 2014 - March 2016
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold April 2014 - March 2016
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-browser
@@ -168,14 +166,14 @@ html
                   .TimelineItem-badge
                     i.fa-solid.fa-school
                   .TimelineItem-body
-                    .color-fg-muted.h4.text-regular Kagawa University
+                    .color-fg-muted.h4.text-normal Kagawa University
                     .color-fg-muted.h5
-                      .mt-3.text-medium April 2010 - March 2016
-                      ul.fa-ul.mt-3.text-regular
+                      .mt-3.text-semibold April 2010 - March 2016
+                      ul.fa-ul.mt-3.st-2.text-normal
                         li
                           span.fa-li.color-fg-muted
                             i.fa-duotone.fa-lg.fa-graduation-cap
                           | Master of computer science
-          .color-fg-muted.h4.mt-4.text-center.text-regular
+          .color-fg-muted.h4.mt-4.text-center.text-normal
             i.fa-regular.fa-copyright.mr-2
             | 2022
