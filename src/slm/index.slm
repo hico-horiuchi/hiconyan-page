@@ -2,8 +2,8 @@ doctype html
 html lang="en"
   head
     title Akihiko Horiuchi (@hiconyan)
-    link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"
-    link rel="icon" href="favicon.ico"
+    link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"
+    link rel="icon" href="images/favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
     link rel="stylesheet" type="text/css" href="app.min.css"
     meta charset="utf-8"
@@ -13,14 +13,14 @@ html lang="en"
     meta property="og:title" content="Akihiko Horiuchi (@hiconyan)"
     meta property="og:type" content="profile"
     meta property="og:url" content="https://hiconyan.page/"
-    script defer="" src="https://kit.fontawesome.com/d2bc3ff7fe.js"
+    script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
   body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
     .container-lg.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
-          img.banner.rounded-top-2 src="port-industry-internet-connection.jpg"
+          img.banner.rounded-top-2 alt="${this.banner.alternative}" src="${this.banner.source}"
           svg.circle.icon.mx-auto viewBox="0 0 600 600"
-            use xlink:href="icon.svg#icon"
+            use xlink:href="images/icon.svg#icon"
           .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-fg-default.mb-0.text-center
@@ -32,148 +32,47 @@ html lang="en"
           .clearfix
             .col-12.col-lg-3.col-md-4.float-left.mt-8.mt-md-6
               ul.fa-ul.h4.st-4.text-normal
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-facebook
-                  a.color-fg-muted href="https://www.facebook.com/hico.horiuchi" rel="noopener noreferrer" target="_blank"
-                    | Akihiko Horiuchi
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-github
-                  a.color-fg-muted href="https://github.com/hico-horiuchi" rel="noopener noreferrer" target="_blank"
-                    | hico-horiuchi
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-instagram
-                  a.color-fg-muted href="https://www.instagram.com/hico_horiuchi/" rel="noopener noreferrer" target="_blank"
-                    | hico_horiuchi
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-linkedin
-                  a.color-fg-muted href="https://www.linkedin.com/in/hico-horiuchi/" rel="noopener noreferrer" target="_blank"
-                    | Akihiko Horiuchi
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-speaker-deck
-                  a.color-fg-muted href="https://speakerdeck.com/hiconyan" rel="noopener noreferrer" target="_blank"
-                    | hiconyan
-                li
-                  span.fa-li.color-fg-muted
-                    i.fa-brands.fa-xl.fa-twitter
-                  a.color-fg-muted href="https://twitter.com/hico_horiuchi" rel="noopener noreferrer" target="_blank"
-                    | hico_horiuchi
-                li
-                  span.fa-li.color-fg-muted
-                    i.fak.fa-xl.fa-zenn
-                  a.color-fg-muted href="https://zenn.dev/hiconyan" rel="noopener noreferrer" target="_blank"
-                    | hiconyan
+                - for link of this.links
+                  li
+                    span.fa-li.color-fg-muted
+                      - if link.icon.uploaded
+                        i.fa-xl.fak class="fa-${link.icon.name}"
+                      - else
+                        i.fa-xl.fa-brands class="fa-${link.icon.name}"
+                    a.color-fg-muted href=link.url rel="noopener noreferrer" target="_blank"
+                      = link.text
             .col-12.col-lg-9.col-md-8.float-left.mt-8.mt-md-6
               .Timeline
-                .TimelineItem
-                  .TimelineItem-badge
-                    i.fa-solid.fa-building
-                  .TimelineItem-body
-                    .color-fg-muted.h4.text-normal Software Engineer, NTT Communications
-                    .color-fg-muted.h5.mt-3
-                      .mt-3.text-semibold April 2021 - Present
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-network-wired
-                          | Develop&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank"
-                            | Firewall (vSRX)
-                          | &nbsp;and&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank"
-                            | Managed Load Balancer
-                          | &nbsp;services of Enterprise Cloud 2.0
-                        li
-                          ul.st-1.text-small
-                            li Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
-                            li Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
-                .TimelineItem
-                  .TimelineItem-badge
-                    i.fa-solid.fa-building
-                  .TimelineItem-body
-                    .color-fg-muted.h4.text-normal Software Engineer, NTT Ltd Japan
-                    .color-fg-muted.h5.mt-3
-                      .mt-3.text-semibold October 2020 - March 2021
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-network-wired
-                          | Develop&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank"
-                            | Firewall (vSRX)
-                          | &nbsp;and&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank"
-                            | Managed Load Balancer
-                          | &nbsp;services of Enterprise Cloud 2.0
-                    .color-fg-muted.h5
-                      .mt-3.text-semibold July 2019 - September 2020
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-server
-                          | Develop&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank"
-                            | Baremetal Server
-                          | &nbsp;and&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank"
-                            | Dedicated Hypervisor
-                          | &nbsp;services of Enterprise Cloud 2.0
-                        li
-                          ul.st-1.text-small
-                            li Implement APIs for providing physical servers on demand
-                            li Integrate with physical servers using IPMI and Redfish
-                            li Automate OS installations and settings using PXE, Kickstart and cloud-init
-                            li Improve CI/CD, promote ChatOps and so on
-                .TimelineItem
-                  .TimelineItem-badge
-                    i.fa-solid.fa-building
-                  .TimelineItem-body
-                    .color-fg-muted.h4.text-normal Software Engineer, NTT Communications
-                    .color-fg-muted.h5
-                      .mt-3.text-semibold April 2016 - June 2019
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-server
-                          | Develop&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank"
-                            | Baremetal Server
-                          | &nbsp;and&nbsp;
-                          a.color-fg-muted href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank"
-                            | Dedicated Hypervisor
-                          | &nbsp;services of Enterprise Cloud 2.0
-                .TimelineItem
-                  .TimelineItem-badge
-                    i.fa-solid.fa-building
-                  .TimelineItem-body
-                    .color-fg-muted.h4.text-normal Software Engineer, Aqutras Inc.
-                    .color-fg-muted.h5
-                      .mt-3.text-semibold April 2014 - March 2016
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-browser
-                          | Develop web applications for advertisements and schedule management
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-monitor-heart-rate
-                          | Build monitoring and logging infrastructure for web applications
-                .TimelineItem
-                  .TimelineItem-badge
-                    i.fa-solid.fa-school
-                  .TimelineItem-body
-                    .color-fg-muted.h4.text-normal Kagawa University
-                    .color-fg-muted.h5
-                      .mt-3.text-semibold April 2010 - March 2016
-                      ul.fa-ul.mt-3.st-2.text-normal
-                        li
-                          span.fa-li.color-fg-muted
-                            i.fa-duotone.fa-lg.fa-graduation-cap
-                          | Master of computer science
+                - for timeline of this.timelines
+                  .TimelineItem
+                    .TimelineItem-badge
+                      - if timeline.type === "company"
+                        i.fa-solid.fa-building
+                      - if timeline.type === "school"
+                        i.fa-solid.fa-school
+                    .TimelineItem-body.st-3
+                      - if timeline.title
+                        .color-fg-muted.h4.text-normal
+                          | ${timeline.title}, ${timeline.name}
+                      - else
+                        .color-fg-muted.h4.text-normal
+                          = timeline.name
+                      - for experience of timeline.experiences
+                        .color-fg-muted.h5
+                          .text-semibold
+                            | ${experience.date.begin_at} - ${experience.date.end_at}
+                          ul.fa-ul.mt-3.st-2.text-normal
+                            - for item of experience.items
+                              li
+                                span.fa-li.color-fg-muted
+                                  i.fa-duotone.fa-lg class="fa-${item.icon.name}"
+                                == item.description
+                              - if item.details
+                                li
+                                  ul.st-1.text-small
+                                    - for detail of item.details
+                                      li
+                                        = detail
           .color-fg-muted.h4.mt-4.text-center.text-normal
             i.fa-regular.fa-copyright.mr-2
-            | 2022
+            = this.copyright

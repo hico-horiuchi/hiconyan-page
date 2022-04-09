@@ -1,0 +1,125 @@
+---
+banner:
+  # alternative: Close Up Photo of Mining Rig
+  # source: images/close-up-photo-of-mining-rig.jpg
+  alternative: Cables, cabling, center
+  source: images/port-industry-internet-connection.jpg
+links:
+  - icon:
+      name: facebook
+    text: Facebook
+    url: https://www.facebook.com/hico.horiuchi
+  - icon:
+      name: github
+    text: GitHub
+    url: https://github.com/hico-horiuchi
+  - icon:
+      name: instagram
+    text: Instagram
+    url: https://www.instagram.com/hico_horiuchi/
+  - icon:
+      name: linkedin
+    text: LinkedIn
+    url: https://www.linkedin.com/in/hico-horiuchi/
+  - icon:
+      name: speaker-deck
+    text: Speaker Deck
+    url: https://speakerdeck.com/hiconyan
+  - icon:
+      name: twitter
+    text: Twitter
+    url: https://twitter.com/hico_horiuchi
+  # - icon:
+  #     name: zenn
+  #     uploaded: true
+  #   text: Zenn
+  #   url: https://zenn.dev/hiconyan
+settings:
+  fontawesome:
+    # domains:
+    #   - hiconyan.page
+    #   - *.web.app
+    # format: svg
+    # plan: pro
+    # version: 6.x
+    kit: d2bc3ff7fe
+timelines:
+  - experiences:
+      - date:
+          begin_at: April 2021
+          end_at: Present
+        items:
+          - description: |
+              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+            details:
+              - Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
+              - Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
+            icon:
+              name: network-wired
+    name: NTT Communications
+    title: Software Engineer
+    type: company
+  - experiences:
+      - date:
+          begin_at: October 2020
+          end_at: March 2021
+        items:
+          - description: |
+              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+            icon:
+              name: network-wired
+      - date:
+          begin_at: July 2019
+          end_at: September 2020
+        items:
+          - description: |
+              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+            details:
+              - Implement APIs for providing physical servers on demand
+              - Integrate with physical servers using IPMI and Redfish
+              - Automate OS installations and settings using PXE, Kickstart and cloud-init
+              - Improve CI/CD, promote ChatOps and so on
+            icon:
+              name: server
+    name: NTT Ltd Japan
+    title: Software Engineer
+    type: company
+  - experiences:
+      - date:
+          begin_at: April 2016
+          end_at: June 2019
+        items:
+          - description: |
+              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+            icon:
+              name: server
+    name: NTT Communications
+    title: Software Engineer
+    type: company
+  - experiences:
+      - date:
+          begin_at: April 2014
+          end_at: March 2016
+        items:
+          - description: |
+              Develop web applications for advertisements and schedule management
+            icon:
+              name: browser
+          - description: |
+              Build monitoring and logging infrastructure for web applications
+            icon:
+              name: monitor-heart-rate
+    name: Aqutras Inc.
+    title: Software Engineer
+    type: company
+  - experiences:
+      - date:
+          begin_at: April 2010
+          end_at: March 2016
+        items:
+          - description: |
+              Master of computer science
+            icon:
+              name: graduation-cap
+    name: Kagawa University
+    type: school
