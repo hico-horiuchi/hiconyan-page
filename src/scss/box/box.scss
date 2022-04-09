@@ -1,0 +1,19 @@
+//--------------------------------------------------
+// Box: Box
+//--------------------------------------------------
+
+.Box {
+  border: none;
+}
+
+.Box-header {
+  border: 1px solid var(--color-border-muted);
+  margin: 0;
+  position: relative;
+}
+
+.Box-body {
+  border-bottom: 1px solid var(--color-border-muted);
+  border-left: 1px solid var(--color-border-muted);
+  border-right: 1px solid var(--color-border-muted);
+}

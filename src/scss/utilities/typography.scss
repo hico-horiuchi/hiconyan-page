@@ -1,0 +1,14 @@
+//--------------------------------------------------
+// Utilities: Typography
+//--------------------------------------------------
+
+* {
+  &:not(i) {
+    letter-spacing: 0.02rem;
+  }
+}
+
+i[class^='fa-'],
+svg.svg-inline--fa {
+  letter-spacing: 0;
+}

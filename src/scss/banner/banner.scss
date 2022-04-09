@@ -1,0 +1,12 @@
+//--------------------------------------------------
+// Banner: Banner
+//--------------------------------------------------
+
+.banner {
+  filter: grayscale(100%);
+  height: $banner-height;
+  object-fit: cover;
+  // object-position: left bottom;
+  object-position: center bottom;
+  width: 100%;
+}

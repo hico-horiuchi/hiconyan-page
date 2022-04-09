@@ -1,0 +1,27 @@
+//--------------------------------------------------
+// Icon: Icon
+//--------------------------------------------------
+
+.icon,
+.icon-border {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: calc($banner-height - $icon-height / 2);
+  width: $icon-height;
+}
+
+.icon {
+  background-color: var(--color-canvas-default);
+  fill: var(--color-fg-default);
+  fill-opacity: 0.95;
+  height: $icon-height;
+}
+
+.icon-border {
+  border-left: $border-width $border-style var(--color-border-muted);
+  border-radius: calc($icon-height / 2) calc($icon-height / 2) 0 0;
+  border-right: $border-width $border-style var(--color-border-muted);
+  border-top: $border-width $border-style var(--color-border-muted);
+  height: calc($icon-height / 2);
+}
