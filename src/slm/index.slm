@@ -65,7 +65,7 @@ html lang="en"
                             - for item of experience.items
                               li
                                 span.fa-li.color-fg-muted
-                                  i.fa-duotone.fa-lg class="fa-${item.icon.name}"
+                                  i.fa-duotone.fa-lg class="fa-${item.icon.name}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.6;"
                                 == item.description
                               - if item.details
                                 li

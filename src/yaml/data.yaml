@@ -50,7 +50,7 @@ timelines:
           end_at: Present
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
             details:
               - Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
               - Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
@@ -65,7 +65,7 @@ timelines:
           end_at: March 2021
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
             icon:
               name: network-wired
       - date:
@@ -73,7 +73,7 @@ timelines:
           end_at: September 2020
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
             details:
               - Implement APIs for providing physical servers on demand
               - Integrate with physical servers using IPMI and Redfish
@@ -90,7 +90,7 @@ timelines:
           end_at: June 2019
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-muted" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
             icon:
               name: server
     name: NTT Communications
