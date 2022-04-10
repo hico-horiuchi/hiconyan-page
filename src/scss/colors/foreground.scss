@@ -1,8 +1,7 @@
 //--------------------------------------------------
-// Variables: Root
+// Colors: Foreground
 //--------------------------------------------------
 
-:root {
-  --color-fg-theme: #67b364;
-  --fa-li-width: 3em;
+.color-fg-theme {
+  color: var(--color-fg-theme);
 }

@@ -1,8 +1,5 @@
 //--------------------------------------------------
-// Variables: Root
+// Colors: Index
 //--------------------------------------------------
 
-:root {
-  --color-fg-theme: #67b364;
-  --fa-li-width: 3em;
-}
+@import './foreground.scss';
