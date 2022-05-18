@@ -50,14 +50,15 @@ timelines:
           end_at: Present
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
             details:
-              - Design and develop APIs and workflows for providing self-managed and managed virtual network appliances
-              - Manage service development, collaborate and coordinate with the product team, the operation team and other microservice teams
+              - Designing, implementing and operating systems to provide self-managed and managed virtual network appliances
+              - Leading the service development, identifying and resolving cross-team issues
             icon:
               name: network-wired
+        title: Software Engineer
     name: NTT Communications
-    title: Software Engineer
+    place: Tokyo, Japan
     type: company
   - experiences:
       - date:
@@ -65,24 +66,24 @@ timelines:
           end_at: March 2021
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
             icon:
               name: network-wired
+        title: Software Engineer
       - date:
           begin_at: July 2019
           end_at: September 2020
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
             details:
-              - Implement APIs for providing physical servers on demand
-              - Integrate with physical servers using IPMI and Redfish
-              - Automate OS installations and settings using PXE, Kickstart and cloud-init
-              - Improve CI/CD, promote ChatOps and so on
+              - Designing, implementing and operating systems to provide physical servers on demand
+              - Maintaining CI/CD systems and supporting ChatOps to improve developer experience
             icon:
               name: server
+        title: Software Engineer
     name: NTT Ltd Japan
-    title: Software Engineer
+    place: Tokyo, Japan
     type: company
   - experiences:
       - date:
@@ -90,11 +91,12 @@ timelines:
           end_at: June 2019
         items:
           - description: |
-              Develop&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
             icon:
               name: server
+        title: Software Engineer
     name: NTT Communications
-    title: Software Engineer
+    place: Tokyo, Japan
     type: company
   - experiences:
       - date:
@@ -102,15 +104,16 @@ timelines:
           end_at: March 2016
         items:
           - description: |
-              Develop web applications for advertisements and schedule management
+              Developing web applications for managing advertisements and schedules
             icon:
               name: browser
           - description: |
-              Build monitoring and logging infrastructure for web applications
+              Building monitoring and logging platforms for web applications
             icon:
               name: monitor-heart-rate
+        title: Software Engineer
     name: Aqutras Inc.
-    title: Software Engineer
+    place: Japan
     type: company
   - experiences:
       - date:
@@ -122,4 +125,5 @@ timelines:
             icon:
               name: graduation-cap
     name: Kagawa University
+    place: Japan
     type: school
