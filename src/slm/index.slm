@@ -51,16 +51,20 @@ html lang="en"
                       - if timeline.type === "school"
                         i.fa-solid.fa-school
                     .TimelineItem-body.st-3
-                      - if timeline.title
+                      - if timeline.place
                         .color-fg-muted.h4.text-normal
-                          | ${timeline.title}, ${timeline.name}
+                          | ${timeline.name} (${timeline.place})
                       - else
                         .color-fg-muted.h4.text-normal
                           = timeline.name
                       - for experience of timeline.experiences
                         .color-fg-muted.h5
-                          .text-semibold
-                            | ${experience.date.begin_at} - ${experience.date.end_at}
+                          - if experience.title
+                            .text-semibold
+                              | ${experience.date.begin_at} - ${experience.date.end_at}, ${experience.title}
+                          - else
+                            .text-semibold
+                              | ${experience.date.begin_at} - ${experience.date.end_at}
                           ul.fa-ul.mt-3.st-2.text-normal
                             - for item of experience.items
                               li
