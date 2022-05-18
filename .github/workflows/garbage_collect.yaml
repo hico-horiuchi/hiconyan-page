@@ -6,7 +6,7 @@ on:
     types:
       - closed
 env:
-  NODE_VERSION: '17'
+  NODE_VERSION: '18'
 jobs:
   firebase_hosting:
     runs-on: ubuntu-latest
