@@ -1,4 +1,4 @@
-## Akihiko Horiuchi's Portfolio
+## HORIUCHI Akihiko's Portfolio
 
 [![Delivery](https://github.com/hico-horiuchi/hiconyan-page/actions/workflows/delivery.yaml/badge.svg)](https://github.com/hico-horiuchi/hiconyan-page/actions/workflows/delivery.yaml)
 
