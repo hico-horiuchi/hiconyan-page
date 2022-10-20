@@ -1,7 +1,7 @@
 doctype html
 html lang="en"
   head
-    title Akihiko Horiuchi (@hiconyan)
+    title HORIUCHI Akihiko (@hiconyan)
     link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"
     link rel="icon" href="images/favicon.ico"
     link rel="preconnect" href="https://fonts.gstatic.com"
@@ -9,8 +9,8 @@ html lang="en"
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta property="og:description" content="Software Engineer of Enterprise Cloud 2.0"
-    meta property="og:site_name" content="Akihiko Horiuchi (@hiconyan)"
-    meta property="og:title" content="Akihiko Horiuchi (@hiconyan)"
+    meta property="og:site_name" content="HORIUCHI Akihiko (@hiconyan)"
+    meta property="og:title" content="HORIUCHI Akihiko (@hiconyan)"
     meta property="og:type" content="profile"
     meta property="og:url" content="https://hiconyan.page/"
     script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
@@ -25,7 +25,7 @@ html lang="en"
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-fg-default.mb-0.text-center
             span.h2.text-semibold
-              | Akihiko Horiuchi
+              | HORIUCHI Akihiko
             br
             span.h3.text-semibold
               | (@hiconyan)
