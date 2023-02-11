@@ -30,7 +30,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
-    "firebase-tools": "^11.15.0",
+    "firebase-tools": "^11.22.0",
     "npm-force-resolutions": "^0.0.10"
   },
   "resolutions": {
