@@ -26,8 +26,8 @@ links:
     text: Speaker Deck
     url: https://speakerdeck.com/hiconyan
   - icon:
-      name: twitter
-    text: Twitter
+      name: x-twitter
+    text: X (Twitter)
     url: https://twitter.com/hico_horiuchi
   # - icon:
   #     name: zenn

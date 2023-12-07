@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/hico-horiuchi/hiconyan-page#readme",
   "dependencies": {
-    "@primer/css": "^21.0.7",
+    "@primer/css": "^21.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
@@ -27,10 +27,10 @@
     "gulp-sass": "^5.1.0",
     "gulp-slm": "^1.2.3",
     "js-yaml": "^4.1.0",
-    "sass": "^1.63.6"
+    "sass": "^1.69.5"
   },
   "devDependencies": {
-    "firebase-tools": "^12.4.3",
+    "firebase-tools": "^13.0.0",
     "npm-force-resolutions": "^0.0.10"
   },
   "resolutions": {
