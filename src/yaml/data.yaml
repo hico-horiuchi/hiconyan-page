@@ -46,55 +46,67 @@ settings:
 timelines:
   - experiences:
       - date:
-          begin_at: April 2021
+          begin_at: October 2020
           end_at: Present
         items:
           - description: |
-              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
+              Designing and developing Firewall and Managed Load Balancer services for Smart Data Platform
             details:
-              - Designing, implementing and operating systems to provide self-managed and managed virtual network appliances
-              - Leading the service development, identifying and resolving cross-team issues
+              -
+                - Mission & Responsibilities
+                -
+                  - Leading an engineering team of 5+ members to develop controllers that provide self-managed and managed virtual network appliances
+                  - Integrating with product and operation teams and solving cross-team issues to enhance service quality and reliability
+                  - Improving the in-company application framework, CI / CD tools, and common application platform through debugging and troubleshooting
+              -
+                - Accomplishments
+                -
+                  - Completely designed and developed fully managed services with multiple functional specifications and complex infrastructure requirements from scratch in collaboration with related teams
+                  - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service
+              -
+                - Skills & Environments
+                -
+                  - Python (Tornado, pytest)
+                  - Kubernetes (Argo Rollouts, Tekton, CUE)
+                  - Ansible (with in-house modules)
+                  - Terraform (with in-house providers)
+                  - Prow
+                  - OpenAPI, Postman
+                  - Slack, GitHub, Google Workspace, Atlassian Cloud
             icon:
               name: network-wired
-        title: Software Engineer
-    name: NTT Communications
-    place: Tokyo, Japan
-    type: company
-  - experiences:
+        title: Senior Software Engineer, Platform Services
       - date:
-          begin_at: October 2020
-          end_at: March 2021
-        items:
-          - description: |
-              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/firewall-vsrx/" rel="noopener noreferrer" target="_blank">Firewall (vSRX)</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/managed-load-balancer/" rel="noopener noreferrer" target="_blank">Managed Load Balancer</a>&nbsp;services of Enterprise Cloud 2.0
-            icon:
-              name: network-wired
-        title: Software Engineer
-      - date:
-          begin_at: July 2019
+          begin_at: April 2016
           end_at: September 2020
         items:
           - description: |
-              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
+              Designing and developing Baremetal Server and Dedicated Hypervisor services for Smart Data Platform
             details:
-              - Designing, implementing and operating systems to provide physical servers on demand
-              - Maintaining CI/CD systems and supporting ChatOps to improve developer experience
+              -
+                - Mission & Responsibilities
+                -
+                  - Leading an engineering team of 10+ members to develop controllers that provide physical servers on-demand
+                  - Integrating with product and operation teams and solving cross-team issues to enhance service quality and reliability
+                  - Introducing CI / CD and ChatOps to a team to improve developer experience
+              -
+                - Accomplishments
+                -
+                  - Completely automated release procedures that include 30+ manual steps to reduce operation costs and human errors
+                  - Successfully released a collaborative project with another company as a leader of sales, production and development teams
+              -
+                - Skills & Environments
+                -
+                  - Ruby (Ruby on Rails, Sidekiq, RSpec)
+                  - RHEL, Ubuntu, vSphere
+                  - Redis, RabbitMQ
+                  - Consul, Fluentd, Elasticsearch, Kibana
+                  - Ansible, Jenkins
+                  - IPMI, Redfish, PXE, Kickstart, Preseed
+                  - Slack, GitHub, Google Workspace, Atlassian Cloud
             icon:
               name: server
-        title: Software Engineer
-    name: NTT Ltd Japan
-    place: Tokyo, Japan
-    type: company
-  - experiences:
-      - date:
-          begin_at: April 2016
-          end_at: June 2019
-        items:
-          - description: |
-              Developing&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/baremetal-server/" rel="noopener noreferrer" target="_blank">Baremetal Server</a>&nbsp;and&nbsp;<a class="color-fg-theme" href="https://ecl.ntt.com/en/service-introduction/dedicated-hypervisor/" rel="noopener noreferrer" target="_blank">Dedicated Hypervisor</a>&nbsp;services of Enterprise Cloud 2.0
-            icon:
-              name: server
-        title: Software Engineer
+        title: Software Engineer, Platform Services
     name: NTT Communications
     place: Tokyo, Japan
     type: company
@@ -113,17 +125,31 @@ timelines:
               name: monitor-heart-rate
         title: Software Engineer
     name: Aqutras Inc.
-    place: Japan
+    place: Kagawa, Japan
     type: company
   - experiences:
       - date:
-          begin_at: April 2010
+          begin_at: April 2014
           end_at: March 2016
         items:
           - description: |
-              Master of computer science
+              Studying and researching reliability-based information systems engineering
+            details:
+              - Improving and evaluating auto-scaling algorithm for distributed web systems
             icon:
               name: graduation-cap
+        title: Master of Engineering
+      - date:
+          begin_at: April 2010
+          end_at: March 2014
+        items:
+          - description: |
+              Studying and researching reliability-based information systems engineering
+            details:
+              - Improving and evaluating load observation function of web systems fit for cloud
+            icon:
+              name: graduation-cap
+        title: Bachelor of Engineering
     name: Kagawa University
-    place: Japan
+    place: Kagawa, Japan
     type: school
