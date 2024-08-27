@@ -75,8 +75,16 @@ html lang="en"
                                 li
                                   ul.st-1.text-small
                                     - for detail of item.details
-                                      li
-                                        = detail
+                                      - if typeof(detail) === "string"
+                                        li
+                                          = detail
+                                      - else
+                                        li
+                                          = detail[0]
+                                          ul.st-1.text-small
+                                            - for point of detail[1]  
+                                              li
+                                                = point
           .color-fg-muted.h4.mt-4.text-center.text-normal
             i.fa-regular.fa-copyright.mr-2
             = this.copyright
