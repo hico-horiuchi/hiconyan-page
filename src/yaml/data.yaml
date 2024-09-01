@@ -5,28 +5,22 @@ banner:
   alternative: Cables, cabling, center
   source: images/port-industry-internet-connection.jpg
 links:
-  - icon:
-      name: facebook
+  - icon: facebook
     text: Facebook
     url: https://www.facebook.com/hico.horiuchi
-  - icon:
-      name: github
+  - icon: github
     text: GitHub
     url: https://github.com/hico-horiuchi
-  - icon:
-      name: instagram
+  - icon: instagram
     text: Instagram
     url: https://www.instagram.com/hico_horiuchi/
-  - icon:
-      name: linkedin
+  - icon: linkedin
     text: LinkedIn
     url: https://www.linkedin.com/in/hico-horiuchi/
-  - icon:
-      name: speaker-deck
+  - icon: speaker-deck
     text: Speaker Deck
     url: https://speakerdeck.com/hiconyan
-  - icon:
-      name: x-twitter
+  - icon: x-twitter
     text: X (Twitter)
     url: https://twitter.com/hico_horiuchi
   # - icon:
@@ -52,29 +46,25 @@ timelines:
           - description: |
               Designing and developing Firewall and Managed Load Balancer services for Smart Data Platform
             details:
-              -
-                - Mission & Responsibilities
-                -
-                  - Leading an engineering team of 5+ members to develop controllers that provide self-managed and full-managed virtual network appliances
+              - - icon: flag-swallowtail
+                  text: Mission & Responsibilities
+                - - Leading an engineering team of 5+ members to develop controllers that provide self-managed and full-managed virtual network appliances
                   - Integrating with product and operation teams and solving cross-team issues to enhance service value and quality
                   - Improving the in-company application framework, CI / CD tools, and common application platform through debugging and troubleshooting
-              -
-                - Accomplishments
-                -
-                  - Completely designed and developed fully managed services with multiple functional specifications and complex infrastructure requirements from scratch in collaboration with related teams
+              - - icon: gem
+                  text: Accomplishments
+                - - Completely designed and developed fully managed services with multiple functional specifications and complex infrastructure requirements from scratch in collaboration with related teams
                   - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service
-              -
-                - Skills & Environments
-                -
-                  - Python (Tornado, pytest)
+              - - icon: lightbulb
+                  text: Skills & Environments
+                - - Python (Tornado, pytest)
                   - Kubernetes (Argo Rollouts, Tekton, CUE)
                   - Ansible (with in-house modules)
                   - Terraform (with in-house providers)
                   - Prow
                   - OpenAPI, Postman
                   - Slack, GitHub, Google Workspace, Atlassian Cloud
-            icon:
-              name: network-wired
+            icon: network-wired
         title: Senior Software Engineer, Platform Services
       - date:
           begin_at: April 2016
@@ -83,29 +73,25 @@ timelines:
           - description: |
               Designing and developing Baremetal Server and Dedicated Hypervisor services for Smart Data Platform
             details:
-              -
-                - Mission & Responsibilities
-                -
-                  - Leading an engineering team of 10+ members to develop controllers that provide physical servers on-demand
+              - - icon: flag-swallowtail
+                  text: Mission & Responsibilities
+                - - Leading an engineering team of 10+ members to develop controllers that provide physical servers on-demand
                   - Integrating with product and operation teams and solving cross-team issues to enhance service value and quality
                   - Introducing CI / CD and ChatOps to a team to improve developer experience
-              -
-                - Accomplishments
-                -
-                  - Completely automated release procedures that include 30+ manual steps to reduce operation costs and human errors
+              - - icon: gem
+                  text: Accomplishments
+                - - Completely automated release procedures that include 30+ manual steps to reduce operation costs and human errors
                   - Successfully released a collaborative project with another company as a leader of sales, production and development teams
-              -
-                - Skills & Environments
-                -
-                  - Ruby (Ruby on Rails, Sidekiq, RSpec)
+              - - icon: lightbulb
+                  text: Skills & Environments
+                - - Ruby (Ruby on Rails, Sidekiq, RSpec)
                   - RHEL, Ubuntu, vSphere
                   - Redis, RabbitMQ
                   - Consul, Fluentd, Elasticsearch, Kibana
                   - Ansible, Jenkins
                   - IPMI, Redfish, PXE, Kickstart, Preseed
                   - Slack, GitHub, Google Workspace, Atlassian Cloud
-            icon:
-              name: server
+            icon: server
         title: Software Engineer, Platform Services
     name: NTT Communications
     place: Tokyo, Japan
@@ -117,12 +103,10 @@ timelines:
         items:
           - description: |
               Developing web applications for managing advertisements and schedules
-            icon:
-              name: browser
+            icon: browser
           - description: |
               Building monitoring and logging platforms for web applications
-            icon:
-              name: monitor-heart-rate
+            icon: monitor-heart-rate
         title: Software Engineer
     name: Aqutras Inc.
     place: Kagawa, Japan
@@ -135,9 +119,10 @@ timelines:
           - description: |
               Studying and researching reliability-based information systems engineering
             details:
-              - Improving and evaluating auto-scaling algorithm for distributed web systems
-            icon:
-              name: graduation-cap
+              - - icon: pen-nib
+                  text: Thesis
+                - - Improving and evaluating auto-scaling algorithm for distributed web systems
+            icon: graduation-cap
         title: Master of Engineering
       - date:
           begin_at: April 2010
@@ -146,9 +131,10 @@ timelines:
           - description: |
               Studying and researching reliability-based information systems engineering
             details:
-              - Improving and evaluating load observation function of web systems fit for cloud
-            icon:
-              name: graduation-cap
+              - - icon: pen-nib
+                  text: Thesis
+                - - Improving and evaluating load observation function of web systems fit for cloud
+            icon: graduation-cap
         title: Bachelor of Engineering
     name: Kagawa University
     place: Kagawa, Japan

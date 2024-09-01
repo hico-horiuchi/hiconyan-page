@@ -3,6 +3,10 @@
 //--------------------------------------------------
 
 .TimelineItem {
+  &:before {
+    margin-left: calc((var(--timelineBadge-width) - 2rem) / 2);
+  }
+
   &:first-child {
     padding: 0 0 $spacer-3 0;
 
@@ -13,18 +17,20 @@
   }
 
   .TimelineItem-badge {
+    height: var(--timelineBadge-height);
     margin-right: $spacer-3;
+    width: var(--timelineBadge-width);
+
+    svg {
+      height: calc(var(--timelineBadge-height) * 0.5);
+      width: calc(var(--timelineBadge-width) * 0.5);
+    }
   }
 
   .TimelineItem-body {
-    .fa-ul {
-      ul {
-        list-style-type: circle;
-        margin-left: calc(var(--fa-li-width, 2em) / 2);
-
-        > li {
-          padding-left: calc(var(--fa-li-width, 2em) / 6);
-        }
+    > div {
+      > .fa-ul {
+        margin-left: calc(var(--fa-li-margin) + 0.5em);
       }
     }
   }

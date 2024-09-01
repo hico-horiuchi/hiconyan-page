@@ -2,25 +2,25 @@
 // Project
 //--------------------------------------------------
 
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600&display=swap);
 
 //--------------------------------------------------
 // / Overrides
 //--------------------------------------------------
 
 $banner-height: 22.5rem;
-$body-font: 'Ubuntu', sans-serif;
+$body-font: "Ubuntu", sans-serif;
 $icon-height: 10rem;
 
 //--------------------------------------------------
 // / Imports
 //--------------------------------------------------
 
-@import '@primer/css/index.scss';
-@import './banner/index.scss';
-@import './box/index.scss';
-@import './colors/index.scss';
-@import './icon/index.scss';
-@import './timeline/index.scss';
-@import './utilities/index.scss';
-@import './variables/index.scss';
+@import "@primer/css/index.scss";
+@import "./banner/index.scss";
+@import "./box/index.scss";
+@import "./colors/index.scss";
+@import "./icon/index.scss";
+@import "./timeline/index.scss";
+@import "./utilities/index.scss";
+@import "./variables/index.scss";
