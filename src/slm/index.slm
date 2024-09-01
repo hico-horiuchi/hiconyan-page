@@ -24,10 +24,10 @@ html lang="en"
           .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
           p.color-fg-default.mb-0.text-center
-            span.h2.text-semibold
+            span.h2.text-bold
               | HORIUCHI Akihiko
             br
-            span.h3.text-semibold
+            span.h2.text-bold
               | (@hiconyan)
           .clearfix
             .col-12.col-lg-3.col-md-4.float-left.mt-8.mt-md-6
@@ -36,9 +36,9 @@ html lang="en"
                   li
                     span.fa-li.color-fg-muted
                       - if link.icon.uploaded
-                        i.fa-xl.fak class="fa-${link.icon.name}"
+                        i.fa-xl.fak class="fa-${link.icon}"
                       - else
-                        i.fa-xl.fa-brands class="fa-${link.icon.name}"
+                        i.fa-xl.fa-brands class="fa-${link.icon}"
                     a.color-fg-muted href=link.url rel="noopener noreferrer" target="_blank"
                       = link.text
             .col-12.col-lg-9.col-md-8.float-left.mt-8.mt-md-6
@@ -52,39 +52,39 @@ html lang="en"
                         i.fa-solid.fa-school
                     .TimelineItem-body.st-3
                       - if timeline.place
-                        .color-fg-muted.h4.text-normal
+                        .color-fg-muted.h3.text-semibold
                           | ${timeline.name} (${timeline.place})
                       - else
-                        .color-fg-muted.h4.text-normal
+                        .color-fg-muted.h3.text-semibold
                           = timeline.name
                       - for experience of timeline.experiences
-                        .color-fg-muted.h5
+                        .color-fg-muted
                           - if experience.title
-                            .text-semibold
+                            .h4.text-normal
                               | ${experience.date.begin_at} - ${experience.date.end_at}, ${experience.title}
                           - else
-                            .text-semibold
+                            .h4.text-normal
                               | ${experience.date.begin_at} - ${experience.date.end_at}
-                          ul.fa-ul.mt-3.st-2.text-normal
+                          ul.fa-ul.mt-3.st-2
                             - for item of experience.items
-                              li
+                              li.h5.text-normal
                                 span.fa-li.color-fg-muted
-                                  i.fa-duotone.fa-lg class="fa-${item.icon.name}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.6;"
-                                == item.description
+                                  i.fa-duotone.fa-xl class="fa-${item.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                = item.description
                               - if item.details
-                                li
-                                  ul.st-1.text-small
+                                li.h6.text-normal
+                                  ul.fa-ul.mt-3.st-2
                                     - for detail of item.details
-                                      - if typeof(detail) === "string"
-                                        li
-                                          = detail
-                                      - else
-                                        li
-                                          = detail[0]
-                                          ul.st-1.text-small
-                                            - for point of detail[1]  
-                                              li
-                                                = point
+                                      li
+                                        span.fa-li.color-fg-muted
+                                          i.fa-duotone.fa-xl class="fa-${detail[0].icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                        = detail[0].text
+                                        ul.fa-ul.mt-2.st-2
+                                          - for point of detail[1]
+                                            li
+                                              span.fa-li.color-fg-muted
+                                                i.fa-solid.fa-xs.fa-circle-small
+                                              = point
           .color-fg-muted.h4.mt-4.text-center.text-normal
             i.fa-regular.fa-copyright.mr-2
             = this.copyright
