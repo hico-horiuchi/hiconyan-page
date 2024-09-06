@@ -53,7 +53,7 @@ timelines:
                   - Improving the in-company application framework, CI / CD tools, and common application platform through debugging and troubleshooting
               - - icon: gem
                   text: Accomplishments
-                - - Completely designed and developed fully managed services with multiple functional specifications and complex infrastructure requirements from scratch in collaboration with related teams
+                - - Completely designed and developed a full-managed service with 20+ data models and inter-cloud infrastructure requirements from scratch
                   - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service
               - - icon: lightbulb
                   text: Skills & Environments
