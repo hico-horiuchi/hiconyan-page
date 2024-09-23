@@ -3,8 +3,6 @@ on:
   pull_request:
     types:
       - closed
-env:
-  NODE_VERSION: 20
 jobs:
   firebase_hosting:
     runs-on: ubuntu-latest
@@ -14,16 +12,16 @@ jobs:
       # https://github.com/actions/setup-node
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: .node-version
           cache: npm
       # https://github.com/google-github-actions/auth
       - uses: google-github-actions/auth@v2
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
-      - name: npm install
+      - name: install firebase-tools
         run: npm install -g firebase-tools@$(node -p -e "require('./package.json').devDependencies['firebase-tools']")
-      - name: firebase hosting:channel:delete
+      - name: delete firebase hosting channel
         run: |
           channel=$(echo ${{ github.head_ref }} | tr _ -)
           firebase hosting:channel:delete -f ${channel}
