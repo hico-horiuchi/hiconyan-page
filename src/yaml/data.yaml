@@ -44,7 +44,7 @@ timelines:
           end_at: Present
         items:
           - description: |
-              Designing and developing Firewall and Managed Load Balancer services for Smart Data Platform
+              Developing controllers for virtual network appliances of the large-scale cloud service in enterprise use
             details:
               - - icon: flag-swallowtail
                   text: Mission & Responsibilities
@@ -71,16 +71,16 @@ timelines:
           end_at: September 2020
         items:
           - description: |
-              Designing and developing Baremetal Server and Dedicated Hypervisor services for Smart Data Platform
+              Developing controllers for physical servers of the large-scale cloud service in enterprise use
             details:
               - - icon: flag-swallowtail
                   text: Mission & Responsibilities
-                - - Leading an engineering team of 10+ members to develop controllers that provide physical servers on-demand
+                - - Leading an engineering team of 10+ members to develop controllers that provide physical servers and hypervisors on-demand
                   - Integrating with product and operation teams and solving cross-team issues to enhance service value and quality
                   - Introducing CI / CD and ChatOps to a team to improve developer experience
               - - icon: gem
                   text: Accomplishments
-                - - Completely automated release procedures that include 30+ manual steps to reduce operation costs and human errors
+                - - Completely automated release procedures that include 30+ manual steps to keep idempotence, reduce operation costs and human errors
                   - Successfully released a collaborative project with another company as a leader of sales, production and development teams
               - - icon: lightbulb
                   text: Skills & Environments
@@ -107,7 +107,7 @@ timelines:
           - description: |
               Building monitoring and logging platforms for web applications
             icon: monitor-heart-rate
-        title: Software Engineer
+        title: Software Engineer (Part Time)
     name: Aqutras Inc.
     place: Kagawa, Japan
     type: company
