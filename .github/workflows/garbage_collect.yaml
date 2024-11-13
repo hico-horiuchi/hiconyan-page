@@ -12,8 +12,8 @@ jobs:
       # https://github.com/actions/setup-node
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .node-version
           cache: npm
+          node-version-file: .node-version
       # https://github.com/google-github-actions/auth
       - uses: google-github-actions/auth@v2
         with:
