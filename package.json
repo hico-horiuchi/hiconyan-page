@@ -27,7 +27,7 @@
     "gulp-sass": "~5.1",
     "gulp-slm": "~1.2",
     "js-yaml": "~4.1",
-    "sass": "~1.77"
+    "sass": "~1.80"
   },
   "devDependencies": {
     "firebase-tools": "~13"

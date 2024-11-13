@@ -32,8 +32,8 @@ jobs:
       # https://github.com/actions/setup-node
       - uses: actions/setup-node@v4
         with:
-          node-version-file: .node-version
           cache: npm
+          node-version-file: .node-version
       - name: install dependencies
         run: npm install
       - name: update dependencies
