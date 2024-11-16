@@ -17,7 +17,7 @@ jobs:
           format: github
           github-pat: ${{ secrets.GITHUB_TOKEN }}
           output: dependency-results.sbom.json
-          scan-ref: Gemfile.lock
+          scan-ref: package-lock.json
           scan-type: fs
           trivy-config: .trivy.yaml
       # https://github.com/actions/upload-artifact
