@@ -1,3 +1,5 @@
+process.env.SASS_PATH = "./node_modules"
+
 const { src, dest, parallel, watch } = require("gulp");
 const concat = require("gulp-concat");
 const connect = require("gulp-connect");
@@ -9,17 +11,6 @@ const yaml = require("js-yaml");
 
 const config = new Map([
   ["data", new Map([["path", "src/yaml/data.yaml"]])],
-  [
-    "sass",
-    new Map([
-      [
-        "options",
-        {
-          includePaths: "./node_modules/",
-        },
-      ],
-    ]),
-  ],
   [
     "src",
     new Map([
@@ -39,7 +30,7 @@ const config = new Map([
 
 css = () => {
   return src(config.get("src").get("scss"))
-    .pipe(sass(config.get("sass").get("options")))
+    .pipe(sass())
     .pipe(concat("app.min.css"))
     .pipe(csso())
     .pipe(dest(config.get("dest").get("css")));
