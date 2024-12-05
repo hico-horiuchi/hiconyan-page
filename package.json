@@ -24,10 +24,10 @@
     "gulp-concat": "~2.6",
     "gulp-connect": "~5.7",
     "gulp-csso": "~4.0",
-    "gulp-sass": "~5.1",
+    "gulp-sass": "~6.0",
     "gulp-slm": "~1.2",
     "js-yaml": "~4.1",
-    "sass": "~1.80"
+    "sass": "~1.82"
   },
   "devDependencies": {
     "firebase-tools": "~13"
