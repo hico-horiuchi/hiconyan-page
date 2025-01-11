@@ -102,10 +102,10 @@ timelines:
           end_at: March 2016
         items:
           - description: |
-              Developing web applications for managing advertisements and schedules.
+              Developing web applications for managing advertisements and schedules
             icon: browser
           - description: |
-              Building monitoring and logging platforms for web applications.
+              Building monitoring and logging platforms for web applications
             icon: monitor-heart-rate
         title: Software Engineer (Part Time)
     name: Aqutras Inc.
@@ -117,7 +117,7 @@ timelines:
           end_at: March 2016
         items:
           - description: |
-              Studying and researching reliability-based information systems engineering.
+              Studying and researching reliability-based information systems engineering
             details:
               - - icon: pen-nib
                   text: Thesis
@@ -129,7 +129,7 @@ timelines:
           end_at: March 2014
         items:
           - description: |
-              Studying and researching reliability-based information systems engineering.
+              Studying and researching reliability-based information systems engineering
             details:
               - - icon: pen-nib
                   text: Thesis
