@@ -48,13 +48,13 @@ timelines:
             details:
               - - icon: flag-swallowtail
                   text: Mission & Responsibilities
-                - - Leading an engineering team of 5+ members to develop controllers that provide self-managed and full-managed virtual network appliances
-                  - Integrating with product and operation teams and solving cross-team issues to enhance service value and quality
-                  - Improving the in-company application framework, CI / CD tools, and common application platform through debugging and troubleshooting
+                - - Leading an engineering team of 5+ members to develop controllers that provide self-managed and full-managed virtual network appliances.
+                  - Integrating with product, operation and frontend teams to solve cross-team issues and make decisions,  for enhancing service value and quality.
+                  - Improving the in-company application framework, CI / CD tools, and common application platform used by controllers, and applying these improvements to other teams.
               - - icon: gem
                   text: Accomplishments
-                - - Completely designed and developed a full-managed service with 20+ data models and inter-cloud infrastructure requirements from scratch
-                  - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service
+                - - Completely designed and developed a full-managed service with 20+ data models and inter-cloud infrastructure requirements from scratch and released that on schedule.
+                  - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service.
               - - icon: lightbulb
                   text: Skills & Environments
                 - - Python (Tornado, pytest)
@@ -75,13 +75,13 @@ timelines:
             details:
               - - icon: flag-swallowtail
                   text: Mission & Responsibilities
-                - - Leading an engineering team of 10+ members to develop controllers that provide physical servers and hypervisors on-demand
-                  - Integrating with product and operation teams and solving cross-team issues to enhance service value and quality
-                  - Introducing CI / CD and ChatOps to a team to improve developer experience
+                - - Leading an engineering team of 10+ members to develop controllers that provide physical servers and hypervisors on-demand.
+                  - Integrating with product, delivery and operation teams to solve cross-team issues and make decisions,  for enhancing service value and quality.
+                  - Improving CI / CD and introducing ChatOps to the team to improve developer experience.
               - - icon: gem
                   text: Accomplishments
-                - - Completely automated release procedures that include 30+ manual steps to keep idempotence, reduce operation costs and human errors
-                  - Successfully released a collaborative project with another company as a leader of sales, production and development teams
+                - - Completely automated release procedures that include 30+ manual steps to keep idempotence, reduce operation costs and human errors.
+                  - Successfully released a collaborative project with another company as a leader of sales, production and development teams.
               - - icon: lightbulb
                   text: Skills & Environments
                 - - Ruby (Ruby on Rails, Sidekiq, RSpec)
@@ -102,10 +102,10 @@ timelines:
           end_at: March 2016
         items:
           - description: |
-              Developing web applications for managing advertisements and schedules
+              Developing web applications for managing advertisements and schedules.
             icon: browser
           - description: |
-              Building monitoring and logging platforms for web applications
+              Building monitoring and logging platforms for web applications.
             icon: monitor-heart-rate
         title: Software Engineer (Part Time)
     name: Aqutras Inc.
@@ -117,7 +117,7 @@ timelines:
           end_at: March 2016
         items:
           - description: |
-              Studying and researching reliability-based information systems engineering
+              Studying and researching reliability-based information systems engineering.
             details:
               - - icon: pen-nib
                   text: Thesis
@@ -129,7 +129,7 @@ timelines:
           end_at: March 2014
         items:
           - description: |
-              Studying and researching reliability-based information systems engineering
+              Studying and researching reliability-based information systems engineering.
             details:
               - - icon: pen-nib
                   text: Thesis
