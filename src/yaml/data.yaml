@@ -57,13 +57,14 @@ timelines:
                   - Successfully migrated the controller from 20+ virtual machines on-premises to Kubernetes on the cloud service.
               - - icon: lightbulb
                   text: Skills & Environments
-                - - Python (Tornado, pytest)
-                  - Kubernetes (Argo Rollouts, Tekton)
-                  - Ansible (with in-house modules)
-                  - Terraform (with in-house providers)
+                - - Python (Tornado, pytest, Ansible Module)
+                  - Go (Terraform Provider)
+                  - Docker, Kubernetes (Argo Rollouts, Tekton)
+                  - Git, GitHub (Actions)
+                  - Ansible
+                  - Terraform
                   - Prow
                   - OpenAPI, Postman
-                  - Slack, GitHub, Google Workspace, Atlassian Cloud
             icon: network-wired
         title: Senior Software Engineer, Platform Services
       - date:
@@ -85,12 +86,14 @@ timelines:
               - - icon: lightbulb
                   text: Skills & Environments
                 - - Ruby (Ruby on Rails, Sidekiq, RSpec)
+                  - Ansible
+                  - Consul
+                  - Git, GitHub (Actions)
+                  - Fluentd, Elasticsearch, Kibana
                   - RHEL / CentOS, Ubuntu, vSphere
                   - Redis, RabbitMQ
-                  - Consul, Fluentd, Elasticsearch, Kibana
-                  - Ansible, Jenkins
+                  - Jenkins
                   - IPMI, Redfish, PXE, Kickstart, Preseed
-                  - Slack, GitHub, Google Workspace, Atlassian Cloud
             icon: server
         title: Software Engineer, Platform Services
     name: NTT Communications
