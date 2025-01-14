@@ -58,7 +58,7 @@ timelines:
               - - icon: lightbulb
                   text: Skills & Environments
                 - - Python (Tornado, pytest)
-                  - Kubernetes (Argo Rollouts, Tekton, CUE)
+                  - Kubernetes (Argo Rollouts, Tekton)
                   - Ansible (with in-house modules)
                   - Terraform (with in-house providers)
                   - Prow
