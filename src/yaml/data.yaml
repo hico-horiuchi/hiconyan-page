@@ -85,7 +85,7 @@ timelines:
               - - icon: lightbulb
                   text: Skills & Environments
                 - - Ruby (Ruby on Rails, Sidekiq, RSpec)
-                  - RHEL, Ubuntu, vSphere
+                  - RHEL / CentOS, Ubuntu, vSphere
                   - Redis, RabbitMQ
                   - Consul, Fluentd, Elasticsearch, Kibana
                   - Ansible, Jenkins
