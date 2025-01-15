@@ -90,7 +90,7 @@ timelines:
                   - Consul
                   - Git, GitHub (Actions)
                   - Fluentd, Elasticsearch, Kibana
-                  - Linux (RHEL / CentOS, Ubuntu), VMware (vSphere)
+                  - Linux (RHEL / CentOS, Ubuntu), VMware (ESXi)
                   - Redis, RabbitMQ
                   - Jenkins
                   - IPMI, Redfish, PXE, Kickstart, Preseed
