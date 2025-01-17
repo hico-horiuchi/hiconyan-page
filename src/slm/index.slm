@@ -15,7 +15,7 @@ html lang="en"
     meta property="og:url" content="https://hiconyan.page/"
     script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
   body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
-    .container-lg.p-4
+    .container-xl.p-4
       .Box.color-shadow-large.mx-auto.rounded-2
         .Box-header.lh-0.p-0.rounded-top-2
           img.banner.rounded-top-2 alt="${this.banner.alternative}" src="${this.banner.source}"
@@ -23,25 +23,29 @@ html lang="en"
             use xlink:href="images/icon.svg#icon"
           .mx-auto.icon-border
         .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
-          p.color-fg-default.mb-0.text-center
+          .color-fg-default.text-center
             span.h2.text-bold
               | HORIUCHI Akihiko
             br
             span.h2.text-bold
               | (@hiconyan)
+          .color-fg-muted.mt-8.mt-md-6.px-0.px-md-6
+            span.h4.text-normal
+              = this.summary.description
+            ul.color-fg-muted.fa-ul.h5.mt-3.st-2.text-normal
+              - for detail of this.summary.details
+                li
+                  span.fa-li
+                    i.fa-solid.fa-xs.fa-circle-small
+                  = detail[0]
+                  ul.fa-ul.mt-2.st-2
+                    - for point of detail[1]
+                      li
+                        span.fa-li
+                          i.fa-solid.fa-xs.fa-circle-small
+                        = point
           .clearfix
-            .col-12.col-lg-3.col-md-4.float-left.mt-8.mt-md-6
-              ul.fa-ul.h4.st-4.text-normal
-                - for link of this.links
-                  li
-                    span.fa-li.color-fg-muted
-                      - if link.icon.uploaded
-                        i.fa-xl.fak class="fa-${link.icon}"
-                      - else
-                        i.fa-xl.fa-brands class="fa-${link.icon}"
-                    a.color-fg-muted href=link.url rel="noopener noreferrer" target="_blank"
-                      = link.text
-            .col-12.col-lg-9.col-md-8.float-left.mt-8.mt-md-6
+            .col-12.col-md-8.float-left.mt-4.mt-md-6.pr-0.pr-md-6
               .Timeline
                 - for timeline of this.timelines
                   .TimelineItem
@@ -65,10 +69,10 @@ html lang="en"
                           - else
                             .h4.text-normal
                               | ${experience.date.begin_at} - ${experience.date.end_at}
-                          ul.fa-ul.mt-3.st-2
+                          ul.color-fg-muted.fa-ul.mt-3.st-2
                             - for item of experience.items
                               li.h5.text-normal
-                                span.fa-li.color-fg-muted
+                                span.fa-li
                                   i.fa-duotone.fa-xl class="fa-${item.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
                                 = item.description
                               - if item.details
@@ -76,15 +80,65 @@ html lang="en"
                                   ul.fa-ul.mt-3.st-2
                                     - for detail of item.details
                                       li
-                                        span.fa-li.color-fg-muted
-                                          i.fa-duotone.fa-xl class="fa-${detail[0].icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
-                                        = detail[0].text
+                                        span.fa-li
+                                          i.fa-duotone.fa-xl class="fa-${detail.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                        = detail.title
                                         ul.fa-ul.mt-2.st-2
-                                          - for point of detail[1]
+                                          - for point of detail.points
                                             li
-                                              span.fa-li.color-fg-muted
-                                                i.fa-solid.fa-xs.fa-circle-small
-                                              = point
-          .color-fg-muted.h4.mt-4.text-center.text-normal
+                                              - if Array.isArray(point)
+                                                span.fa-li
+                                                  i.fa-solid.fa-xs.fa-circle-small
+                                                span.text-semibold
+                                                  = point[0]
+                                                ul.fa-ul.mt-2.st-2
+                                                  - for subpoint of point[1]
+                                                    li
+                                                      span.fa-li
+                                                        i.fa-solid.fa-xs.fa-circle-small
+                                                      = subpoint
+                                              - else
+                                                span.fa-li
+                                                  i.fa-solid.fa-xs.fa-circle-small
+                                                - subpoints = point.split(':')
+                                                - if subpoints.length === 1
+                                                  = point
+                                                - else
+                                                  span.text-semibold
+                                                    | ${subpoints[0]}:
+                                                  = subpoints[1]
+            .col-12.col-md-4.float-left.mt-4.mt-md-6
+              .color-fg-muted.h3.text-semibold
+                | Skills
+              div.pl-3
+                ul.color-fg-muted.fa-ul.mt-4.mt-mb-6.st-3
+                  - for skill of this.skills
+                    li.h5.text-normal
+                      span.fa-li
+                        - if skill.icon.uploaded
+                          i.fa-xl.fak class="fa-${skill.icon}"
+                        - else
+                          i.fa-xl.fa-duotone class="fa-${skill.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                      = skill.title
+                      ul.fa-ul.h6.mt-3.st-2.text-normal
+                        - for item of skill.items
+                          li
+                            span.fa-li
+                              i.fa-solid.fa-xs.fa-circle-small
+                            = item
+              .color-fg-muted.h3.mt-4.mt-mb-6.text-semibold
+                | Links
+              div.pl-3
+                ul.fa-ul.mt-4.mt-mb-6.st-4
+                  - for link of this.links
+                    li.h5.text-normal
+                      span.fa-li.color-fg-muted
+                        - if link.icon.uploaded
+                          i.fa-xl.fak class="fa-${link.icon}"
+                        - else
+                          i.fa-xl.fa-brands class="fa-${link.icon}"
+                      a.color-fg-muted href=link.url rel="noopener noreferrer" target="_blank"
+                        = link.title
+          .color-fg-muted.h4.mt-4.mt-md-6.text-center.text-normal
             i.fa-regular.fa-copyright.mr-2
             = this.copyright
