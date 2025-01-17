@@ -15,7 +15,7 @@ jobs:
         id: latest_node
         run: |
           major_version="v$(cat .node-version | cut -d '.' -f 1)"
-          version=$(curl -s "${GITHUB_API_URL}/repos/nodejs/node/releases?per_page=100" | jq -r '.[].tag_name' | grep ${major_version} | sort -t '.' -k 2,2n -k 3,3n | tail -n 1 | tr -d 'v')
+          version=$(curl -s "${GITHUB_API_URL}/repos/nodejs/node/releases?per_page=100" | jq -r '.[].tag_name' | grep "^${major_version}" | sort -t '.' -k 1,1n -k 2,2n -k 3,3n | tail -n 1 | tr -d 'v')
           echo "version=${version}" >> "${GITHUB_OUTPUT}"
   pull_request:
     runs-on: ubuntu-latest
