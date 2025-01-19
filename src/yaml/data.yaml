@@ -64,21 +64,22 @@ skills:
     items:
       - Jenkins
       - Prow
-  - icon: lightbulb
+  - icon: gears
     title: Others
     items:
       - IPMI, Redfish, PXE, Kickstart, Preseed
       - OpenAPI, Postman
 summary:
   description: |
-    I am a software engineer engaged in the development of public cloud services at NTT Communications.
+    Software Engineer with extensive experience in the development of public cloud services.
   details:
     - - My primary focus is on developing the backend of cloud services.
-      - - I design and implement REST APIs to provide networks and servers as a service, asynchronous processes for building and configuring these resources on the infrastructure, and monitoring systems to collect metrics for users.
-        - I have experience in designing the architecture of backends, establishing CI/CD pipelines, and migrating the infrastructure from virtual servers on-premises to Kubernetes on the cloud service.
-    - - In the team, I take on the role of Tech Lead or Scrum Master.
-      - - I can contribute to decision-making and problem-solving in the team by deciding design with a focus on sustainability and extensibility, managing schedules and breaking down tasks.
-        - I can also contribute to enhancing service value and quality by collaborating with product and operation teams to define service specifications, and by cooperating with other microservice teams and the SRE team.
+      - - Designed and implemented REST APIs to provide networks and servers as a service, background jobs (workflows) for provisioning these resources, and monitoring systems to collect metrics for users.
+        - Led the design of backend architecture, established CI / CD pipelines, and migrated the infrastructure from virtual servers on-premises to Kubernetes on the cloud service.
+    - - In my role, I have also served as Tech Lead or Scrum Master.
+      - - Leading decision-making and problem-solving on development with a focus on sustainability and extensibility in backend architecture and service specifications.
+        - Enhancing service value and quality by collaborating with product and operations teams to define service specifications.
+        - Coordinating with other microservice teams and the SRE team to ensure seamless integration and continuous improvement.
 timelines:
   - experiences:
       - date:
@@ -88,30 +89,30 @@ timelines:
           - description: |
               Backend Development for Firewall and Managed Load Balancer of Smart Data Platform
             details:
-              - icon: users
+              - icon: user
                 title: Team & Role
                 points:
                   - Tech Lead / Developer on the team of 5+ people
-              - icon: flag-swallowtail
+              - icon: flag
                 title: Mission & Responsibilities
                 points:
                   - - Backend Development using Python (Tornado)
                     - - Designed and implemented REST APIs to provide self-managed firewalls and fully-managed load balancers.
-                      - Designed and implemented asynchronous processes to build network products (e.g., vSRX) on virtual servers and configure them via REST APIs.
+                      - Designed and implemented background jobs (workflows) to deploy network products (e.g., vSRX) on virtual servers and configure them via REST APIs.
                       - Designed and implemented monitoring systems to collect metrics from network products (e.g., vSRX) via REST APIs and SNMP.
                   - - CI / CD Pipeline Management
-                    - - Set up CI pipelines to run pytest using Prow, and to execute linter or formatter (e.g., Ruff) using GitHub Actions.
-                      - Set up CD pipelines for Blue / Green Deployment on Kubernetes using Argo Rollouts and Tekton.
+                    - - Configured CI pipelines to integrate pytest using Prow, and to integrate Ruff  using GitHub Actions.
+                      - Configured CD pipelines for Blue / Green Deployment on Kubernetes using Argo Rollouts and Tekton.
                   - - Infrastructure Automation
-                    - - Developed Ansible modules and playbooks to manage provider configurations by executing backend APIs.
-                      - Developed Terraform providers for users to manage Firewall and Managed Load Balancer resources.
+                    - - Developed Ansible modules and playbooks to automate provider configurations via backend APIs.
+                      - Developed Terraform providers to enable users to manage Firewall and Managed Load Balancer resources.
                   - - Documentation and Testing
-                    - - Wrote API references using OpenAPI and implemented scenario tests using Postman.
-              - icon: gem
+                    - - Authored API references using OpenAPI and implemented scenario tests using Postman.
+              - icon: trophy
                 title: Accomplishments
                 points:
                   - "Managed Load Balancer: Designed the backend from scratch, designed the frontend interface, and collaborated with product and operation teams to define service specifications, successfully achieving the planned release."
-                  - "Firewall: Established a method to migrate the backend infrastructure from virtual servers on-premises to Kubernetes on the cloud service, and successfully completed the migration in production without any troubles."
+                  - "Firewall: Established a method to migrate the backend infrastructure from virtual servers on-premises to Kubernetes on the cloud service, and completed the migration in production without issues."
                   - "Internal Software: Contributed to overall quality of the service by fixing bugs and enhancing features to the in-house application framework and CI / CD tools, and sharing these improvements with other teams."
             icon: network-wired
         title: Senior Software Engineer, Platform Services
@@ -122,30 +123,30 @@ timelines:
           - description: |
               Backend Development for Baremetal Server and Dedicated Hypervisor of Smart Data Platform
             details:
-              - icon: users
+              - icon: user
                 title: Team & Role
                 points:
                   - Scrum Master / Developer on the team of 10+ people
-              - icon: flag-swallowtail
+              - icon: flag
                 title: Mission & Responsibilities
                 points:
-                  - - Backend Development with Ruby (Ruby on Rails, Sidekiq)
-                    - - Designed and implemented REST APIs to provide physical servers and hypervisors on-demand.
-                      - Designed and implemented asynchronous processes to configure BIOS / UEFI of physical servers using BMC (iLO, iDRAC, iRMC, etc.).
-                      - Designed and implemented asynchronous processes to automatically install OS (e.g., RHEL/CentOS, Ubuntu, ESXi) on physical servers using PXE, Kickstart, and Preseed.
-                      - Designed and implemented monitoring systems to collect metrics from network products (e.g., vSRX) via REST APIs and SNMP.
+                  - - Backend Development using Ruby (Ruby on Rails, Sidekiq)
+                    - - Designed and implemented REST APIs for on-demand provisioning of physical servers and hypervisors.
+                      - Designed and implemented background jobs (workflows) to configure BIOS / UEFI of physical servers using BMC (iLO, iDRAC, iRMC, etc.).
+                      - Designed and implemented background jobs (workflows) to install operating systems (e.g., RHEL/CentOS, Ubuntu, ESXi) on physical servers using PXE, Kickstart, and Preseed.
+                      - Designed and implemented monitoring systems to collect metrics from physical servers via REST APIs and SNMP.
                   - - CI / CD Pipeline Management
-                    - - Set up CI pipelines to run RSpec using Prow, and to execute linter or formatter (e.g.,Rubocop) using GitHub Actions.
-                      - Set up CD pipelines for Blue / Green Deployment on virtual servers using Jenkins and Ansible.
+                    - - Configured CI pipelines to integrate RSpec using Jenkins, and to integrate Rubocop using GitHub Actions.
+                      - Configured CD pipelines for Blue / Green Deployment on virtual servers using Jenkins and Ansible.
                   - - On-premises Backend Infrastructure Operations
-                    - - Maintained and operated Redis and RabbitMQ.
-                      - Implemented monitoring and logging platforms using Consul, Fluentd, Elasticsearch, and Kibana.
-              - icon: gem
+                    - - Maintained and managed Redis and RabbitMQ.
+                      - Built monitoring and logging platforms using Consul, Fluentd, Elasticsearch, and Kibana.
+              - icon: trophy
                 title: Accomplishments
                 points:
-                  - "Release Automation: Reduced operational workload and minimized human errors by automating release processes using Jenkins and Ansible, and ensuring idempotency."
-                  - "PXE Issue Resolution: Resolved an issue with RHEL / CentOS not booting via iPXE by evaluating and introducing pxelinux, successfully achieving the planned release."
-                  - "Process Improvement: Contributed to reducing construction period for region building and group expansions by collaborating with the delivery team to reconsider and rebuild procedures and processes."
+                  - "Release Automation: Reduced operational workload and minimized human errors by automating release processes using Jenkins and Ansible, ensuring idempotency and consistency."
+                  - "PXE Issue Resolution: Resolved RHEL / CentOS boot issues via iPXE by evaluating and introducing pxelinux, successfully achieving the planned release."
+                  - "Process Improvement: Contributed to reducing construction period for region and group expansions by collaborating with the delivery team to redesign and optimize procedures and processes."
             icon: server
         title: Software Engineer, Platform Services
     name: NTT Communications
