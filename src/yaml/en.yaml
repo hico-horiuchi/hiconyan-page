@@ -4,6 +4,13 @@ banner:
   # source: images/close-up-photo-of-mining-rig.jpg
   alternative: Cables, cabling, center
   source: images/port-industry-internet-connection.jpg
+certifications:
+  - title: Applied Information Technology Engineer
+    year: 2016
+  - title: Certified Scrum Master
+    year: 2022
+  - title: Certified Scrum Product Owner
+    year: 2023
 links:
   - icon: facebook
     title: Facebook
@@ -28,6 +35,10 @@ links:
   #     uploaded: true
   #   title: Zenn
   #   url: https://zenn.dev/hiconyan
+profile:
+  fullname: HORIUCHI Akihiko
+  handlename: "@hiconyan"
+publications: []
 settings:
   fontawesome:
     # domains:
@@ -37,6 +48,7 @@ settings:
     # plan: pro
     # version: 6.x
     kit: d2bc3ff7fe
+  language: en
 skills:
   - icon: code
     title: Programming Languages, Frameworks, Libraries
