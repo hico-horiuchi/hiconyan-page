@@ -1,0 +1,172 @@
+doctype html
+html lang="${this.settings.language}"
+  head
+    title
+      | ${this.profile.fullname} (${this.profile.handlename})
+    link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"
+    link rel="icon" href="images/favicon.ico"
+    link rel="preconnect" href="https://fonts.gstatic.com"
+    link rel="stylesheet" type="text/css" href="app.min.css"
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta property="og:description" content="Software Engineer working on development of public cloud services"
+    meta property="og:site_name" content="${this.profile.fullname} (${this.profile.handlename})"
+    meta property="og:title" content="${this.profile.fullname} (${this.profile.handlename})"
+    meta property="og:type" content="profile"
+    meta property="og:url" content="https://hiconyan.page/${this.settings.language}.html"
+    script defer="" src="https://kit.fontawesome.com/${this.settings.fontawesome.kit}.js"
+  body data-color-mode="auto" data-light-theme="light" data-dark-theme="dark_dimmed"
+    .container-xl.p-4
+      .Box.color-shadow-large.mx-auto.rounded-2
+        .Box-header.lh-0.p-0.rounded-top-2
+          img.banner.rounded-top-2 alt="${this.banner.alternative}" src="${this.banner.source}"
+          svg.circle.icon.mx-auto viewBox="0 0 600 600"
+            use xlink:href="images/icon.svg#icon"
+          .mx-auto.icon-border
+        .Box-body.pb-4.pb-md-6.pt-10.px-4.px-md-6.rounded-bottom-2
+          .color-fg-default.h2.text-bold.text-center
+            = this.profile.fullname
+          .color-fg-default.h3.mt-1.text-bold.text-center
+            = this.profile.handlename
+          .color-fg-muted.mt-8.mt-md-6.px-0.px-md-6
+            span.h4.text-normal
+              = this.summary.description
+            ul.color-fg-muted.fa-ul.h5.mt-3.st-2.text-normal
+              - for detail of this.summary.details
+                li
+                  span.fa-li
+                    i.fa-solid.fa-xs.fa-circle-small
+                  = detail[0]
+                  ul.fa-ul.mt-2.st-2
+                    - for point of detail[1]
+                      li
+                        span.fa-li
+                          i.fa-solid.fa-xs.fa-circle-small
+                        = point
+          .clearfix
+            .col-12.col-md-8.float-left.mt-4.mt-md-6.pr-0.pr-md-6
+              .Timeline
+                - for timeline of this.timelines
+                  .TimelineItem
+                    .TimelineItem-badge
+                      - if timeline.type === "company"
+                        i.fa-solid.fa-building
+                      - if timeline.type === "school"
+                        i.fa-solid.fa-school
+                    .TimelineItem-body.st-3
+                      .color-fg-muted.h3.text-semibold
+                        | ${timeline.name} (${timeline.place})
+                      - for experience of timeline.experiences
+                        .color-fg-muted
+                          .h4.text-normal
+                            - if this.settings.language === "ja"
+                              | ${experience.date.begin_at} 〜 ${experience.date.end_at}、${experience.title}
+                            - else
+                              | ${experience.date.begin_at} - ${experience.date.end_at}, ${experience.title}
+                          ul.color-fg-muted.fa-ul.mt-3.st-2
+                            - for item of experience.items
+                              li.h5.text-normal
+                                span.fa-li
+                                  i.fa-duotone.fa-xl class="fa-${item.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                = item.description
+                              - if item.details
+                                li.h6.text-normal
+                                  ul.fa-ul.mt-3.st-2
+                                    - for detail of item.details
+                                      li
+                                        span.fa-li
+                                          i.fa-duotone.fa-xl class="fa-${detail.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                        = detail.title
+                                        ul.fa-ul.mt-2.st-2
+                                          - for point of detail.points
+                                            li
+                                              - if Array.isArray(point)
+                                                span.fa-li
+                                                  i.fa-solid.fa-xs.fa-circle-small
+                                                span.text-semibold
+                                                  = point[0]
+                                                ul.fa-ul.mt-2.st-2
+                                                  - for subpoint of point[1]
+                                                    li
+                                                      span.fa-li
+                                                        i.fa-solid.fa-xs.fa-circle-small
+                                                      = subpoint
+                                              - else
+                                                span.fa-li
+                                                  i.fa-solid.fa-xs.fa-circle-small
+                                                - subpoints = point.split(':')
+                                                - if subpoints.length === 1
+                                                  = point
+                                                - else
+                                                  span.text-semibold
+                                                    | ${subpoints[0]}:
+                                                  = subpoints[1]
+            .col-12.col-md-4.float-left.mt-4.mt-md-6
+              .color-fg-muted.h3.text-semibold
+                - if this.settings.language === "ja"
+                  | スキル
+                - else
+                  | Skills
+              div.pl-3
+                ul.color-fg-muted.fa-ul.mt-4.mt-mb-6.st-3
+                  - for skill of this.skills
+                    li.h5.text-normal
+                      span.fa-li
+                        - if skill.icon.uploaded
+                          i.fa-xl.fak class="fa-${skill.icon}"
+                        - else
+                          i.fa-xl.fa-duotone class="fa-${skill.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                      = skill.title
+                      ul.fa-ul.h6.mt-3.st-2.text-normal
+                        - for item of skill.items
+                          li
+                            span.fa-li
+                              i.fa-solid.fa-xs.fa-circle-small
+                            = item
+              .color-fg-muted.h3.mt-4.mt-mb-6.text-semibold
+                - if this.settings.language === "ja"
+                  | 資格
+                - else
+                  | Certifications
+              div.pl-3
+                ul.color-fg-muted.fa-ul.mt-4.mt-mb-6.st-3
+                  - for certification of this.certifications
+                    li.h5.text-normal
+                      span.fa-li
+                        i.fa-solid.fa-xs.fa-circle-small
+                      | ${certification.title} (${certification.year})
+              - if this.publications.length > 0
+                .color-fg-muted.h3.mt-4.mt-mb-6.text-semibold
+                  - if this.settings.language === "ja"
+                    | 出版物
+                  - else
+                    | Publications
+                div.pl-3
+                  ul.fa-ul.mt-4.mt-mb-6.st-3
+                    - for publication of this.publications
+                      li.h5.text-normal
+                        span.fa-li.color-fg-muted
+                          i.fa-solid.fa-xs.fa-circle-small
+                        a.color-fg-theme href=publication.url rel="noopener noreferrer" target="_blank"
+                          | ${publication.title}
+                        span.color-fg-muted.ml-1
+                          | (${publication.year})
+              .color-fg-muted.h3.mt-4.mt-mb-6.text-semibold
+                - if this.settings.language === "ja"
+                  | リンク
+                - else
+                  | Links
+              div.pl-3
+                ul.fa-ul.mt-4.mt-mb-6.st-3
+                  - for link of this.links
+                    li.h5.text-normal
+                      span.fa-li.color-fg-muted
+                        - if link.icon.uploaded
+                          i.fa-xl.fak class="fa-${link.icon}"
+                        - else
+                          i.fa-xl.fa-brands class="fa-${link.icon}"
+                      a.color-fg-theme href=link.url rel="noopener noreferrer" target="_blank"
+                        = link.title
+          .color-fg-muted.h4.mt-4.mt-md-6.text-center.text-normal
+            i.fa-regular.fa-copyright.mr-2
+            = this.copyright

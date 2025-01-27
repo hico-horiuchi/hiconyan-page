@@ -1,0 +1,217 @@
+---
+banner:
+  # alternative: Close Up Photo of Mining Rig
+  # source: images/close-up-photo-of-mining-rig.jpg
+  alternative: Cables, cabling, center
+  source: images/port-industry-internet-connection.jpg
+certifications:
+  - title: 応用情報処理技術者
+    year: 2016 年
+  - title: 認定スクラムマスター
+    year: 2022 年
+  - title: 認定プロダクトオーナー
+    year: 2023 年
+links:
+  - icon: facebook
+    title: Facebook
+    url: https://www.facebook.com/hico.horiuchi
+  - icon: github
+    title: GitHub
+    url: https://github.com/hico-horiuchi
+  - icon: instagram
+    title: Instagram
+    url: https://www.instagram.com/hico_horiuchi/
+  - icon: linkedin
+    title: LinkedIn
+    url: https://www.linkedin.com/in/hico-horiuchi/
+  - icon: speaker-deck
+    title: Speaker Deck
+    url: https://speakerdeck.com/hiconyan
+  - icon: x-twitter
+    title: X (Twitter)
+    url: https://twitter.com/hico_horiuchi
+  # - icon:
+  #     name: zenn
+  #     uploaded: true
+  #   title: Zenn
+  #   url: https://zenn.dev/hiconyan
+profile:
+  fullname: 堀内 晨彦
+  handlename: ほりうち あきひこ
+publications:
+  - title: ChatOps で進化する IT 部門のコミュニケーション
+    url: https://techtarget.itmedia.co.jp/tt/series/3297/
+    year: 2016 年
+  - title: Infrastructure as Code で変わる運用管理の現場
+    url: https://techtarget.itmedia.co.jp/tt/series/3926/
+    year: 2016 年
+  - title: Sensu で始めるクラウド時代のシステム監視
+    url: https://atmarkit.itmedia.co.jp/ait/series/5284/
+    year: 2017 年
+settings:
+  fontawesome:
+    # domains:
+    #   - hiconyan.page
+    #   - *.web.app
+    # format: svg
+    # plan: pro
+    # version: 6.x
+    kit: d2bc3ff7fe
+  language: ja
+skills:
+  - icon: code
+    title: プログラミング言語、フレームワーク、ライブラリ
+    items:
+      - Python (Tornado, pytest, Ansible Module)
+      - Ruby (Ruby on Rails, Sidekiq, RSpec)
+      - Go (Terraform Provider)
+      - JavaScript (React, Vue.js, Mithril.js)
+  - icon: screwdriver-wrench
+    title: ツール、技術
+    items:
+      - Ansible
+      - Consul, Terraform
+      - Docker, Kubernetes (Argo Rollouts, Tekton)
+      - Git, GitHub (Actions)
+      - Fluentd, Elasticsearch, Kibana
+      - QEMU, KVM, libvirt
+  - icon: computer-classic
+    title: OS、ミドルウェア
+    items:
+      - Linux (RHEL / CentOS, Ubuntu), VMware (ESXi)
+      - Redis, RabbitMQ
+  - icon: arrows-spin
+    title: CI / CD 、DevOps
+    items:
+      - Jenkins
+      - Prow
+  - icon: gears
+    title: その他
+    items:
+      - IPMI, Redfish, PXE, Kickstart, Preseed
+      - OpenAPI, Postman
+summary:
+  description: |
+    NTT コミュニケーションズにてパブリッククラウドサービスの開発に従事しているソフトウェアエンジニアです。
+  details:
+    - - 主にクラウドサービスのバックエンドを開発しています。
+      - - ネットワークやサーバーを as a Service として提供するための REST API や、それらをインフラストラクチャー上に構築し設定するための非同期処理、ユーザー向けのメトリクスを収集するための監視などを設計 / 実装しています。
+        - バックエンドのアーキテクチャを設計して CI / CD を整備したり、基盤をオンプレミス上の仮想サーバーからクラウドサービス上の Kubernetes に移行させたりした経験があります。
+    - - チームではテックリードやスクラムマスターの役割を担っています。
+      - - 実装や議論を主導するのはもちろんのこと、将来性や拡張性を考慮して設計を決定したり、スケジュールの管理やタスクの細分化をしたりして、チームの意思決定や問題解決に貢献することができます。
+        - また、企画チームや保守チームと協力してサービスの仕様を決定したり、他のマイクロサービスチームや SRE チームなどと連携したりして、サービスの価値や品質の向上に貢献することができます。
+timelines:
+  - experiences:
+      - date:
+          begin_at: 2020/10
+          end_at: 現在
+        items:
+          - description: |
+              Smart Data Platform におけるファイアウォールと Managed Load Balancer のバックエンドの開発
+            details:
+              - icon: user
+                title: 役割
+                points:
+                  - 約 5 人のチームのテックリード / デベロッパー
+              - icon: flag
+                title: 業務内容
+                points:
+                  - - Python (Tornado) を用いたバックエンドの開発
+                    - - Self-managed なファイアウォール / Full-managed なロードバランサを提供するための REST API の設計 / 実装
+                      - ネットワーク製品 (vSRX など) を仮想サーバー上に構築し、REST API 経由で設定するための非同期処理の設計 / 実装
+                      - ネットワーク製品 (vSRX など) から REST API, SNMP 経由でメトリクスを収集するための監視の設計 / 実装
+                  - - バックエンドの CI / CD の整備
+                    - - Prow を用いて pytest を実行したり、GitHub Actions を用いて Ruff などを実行したりするための CI の整備
+                      - Argo Rollouts, Tekton を用いて Kubernetes 上で Blue / Green デプロイするための CD の整備
+                  - バックエンドの API を実行してプロバイダー用の情報を構成管理するための Ansible Module / Playbook の実装
+                  - ユーザーがファイアウォールや Managed Load Balancer を構成管理するやめの Terraform Provider の実装
+                  - OpenAPI を用いた API Reference の執筆、Postman によるシナリオテストの実装
+              - icon: trophy
+                title: 実績 / 成果
+                points:
+                  - Managed Load Balancer のバックエンドをゼロから設計しただけでなく、フロントエンドの画面を設計したり、企画チームや保守チームと協力してサービスの仕様を決定したりすることで、予定通りのリリースを達成
+                  - ファイアウォールのバックエンドの開発環境と基盤をオンプレミス上の仮想サーバからクラウド上の Kubernetes へと移行する方式を確立し、トラブルなく商用移行を完遂
+                  - 社内製のアプリケーションフレームワークや CI / CD ツールのバグ修正や機能追加をするだけでなく、その成果を他のチームにも展開し、サービス全体の品質向上に貢献
+            icon: network-wired
+        title: シニアソフトウェアエンジニア、プラットフォームサービス本部
+      - date:
+          begin_at: 2016/04
+          end_at: 2020/09
+        items:
+          - description: |
+              Smart Data Platform におけるベアメタルサーバーと専用ハイパーバイザーのバックエンドの開発
+            details:
+              - icon: user
+                title: 役割
+                points:
+                  - 約 10 人のチームのスクラムマスター / デベロッパー
+              - icon: flag
+                title: 業務内容
+                points:
+                  - - Ruby (Ruby on Rails, Sidekiq) を用いたバックエンドの開発
+                    - - 物理サーバーやハイパーバイザーをオンデマンドに提供するための REST API の設計 / 実装
+                      - BMC (iLO, iDRAC, iRMC など) を用いて物理サーバーの BIOS / UEFI を設定するための非同期処理の設計 / 実装
+                      - PXE や Kickstart, Preseed などを用いて物理サーバー上に RHEL / CentOS, Ubuntu, ESXi などの OS を自動インストールするための非同期処理の設計 / 実装
+                      - 物理サーバーから IPMI, Redfish, SNMP 経由でメトリクスを収集するための監視の設計 / 実装
+                  - - バックエンドの CI / CD の管理
+                    - - Jenkins を用いて RSpec を実行したり、GitHub Actions を用いて Rubocop などを実行したりするための CI の整備
+                      - Jenkins と Ansible を組み合わせて仮想サーバー上で Blue / Green デプロイするための CD の整備
+                  - - オンプレミス上でのバックエンド基盤の運用
+                    - - Redis, RabbitMQ の維持管理
+                      - Consul, Fluentd, Elasticsearch, Kibana によるモニタリング / ロギング
+              - icon: trophy
+                title: 実績 / 成果
+                points:
+                  - リリース手順を Jenkins と Ansible を用いて自動化することで稼動を削減し、冪等性を担保することで作業ミスを削減
+                  - RHEL / CentOS を iPXE で起動できない問題に直面したが、新たに pxelinux を検証して導入することでサービスとして予定通りのリリースを達成
+                  - 構築チームと協力して手順の見直しや工程の整理を行い、リージョン構築やグループ増設にかかる工期の短縮に貢献
+            icon: server
+        title: ソフトウェアエンジニア、プラットフォームサービス本部
+    name: NTT コミュニケーションズ株式会社
+    place: 東京都
+    type: company
+  - experiences:
+      - date:
+          begin_at: 2014/04
+          end_at: 2016/03
+        items:
+          - description: |
+              広告やスケジュールを管理するための Web アプリケーションの開発
+            icon: browser
+          - description: |
+              Web アプリケーションのための監視 / ログ基盤の構築
+            icon: monitor-heart-rate
+        title: ソフトウェアエンジニア (アルバイト)
+    name: 株式会社アキュトラス
+    place: 香川県
+    type: company
+  - experiences:
+      - date:
+          begin_at: 2014/04
+          end_at: 2016/03
+        items:
+          - description: |
+              信頼性情報システム工学専攻
+            details:
+              - icon: pen-nib
+                title: 修士論文
+                points:
+                  - 分散 Web システムにおけるオートスケールアルゴリズムの改良と評価
+            icon: graduation-cap
+        title: 工学研究科
+      - date:
+          begin_at: 2010/04
+          end_at: 2014/03
+        items:
+          - description: |
+              信頼性情報システム工学科
+            details:
+              - icon: pen-nib
+                title: 学士論文
+                points:
+                  - クラウドに適した Web システムの負荷監視機能の改善と評価
+            icon: graduation-cap
+        title: 工学部
+    name: 香川大学
+    place: 香川県
+    type: school

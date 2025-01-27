@@ -2,10 +2,18 @@
 // Utilities: Typography
 //--------------------------------------------------
 
-* {
+html[lang="en"] *,
+.text-en {
+  font-family: "Ubuntu", serif !important;
+
   &:not(i) {
     letter-spacing: 0.02rem;
   }
+}
+
+html[lang="ja"] *,
+.text-ja {
+  font-family: "M PLUS 1p", serif !important;
 }
 
 i[class^="fa-"],
