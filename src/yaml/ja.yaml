@@ -123,9 +123,9 @@ timelines:
                   - - バックエンドの CI / CD の整備
                     - - Prow を用いて pytest を実行したり、GitHub Actions を用いて Ruff などを実行したりするための CI の整備
                       - Argo Rollouts, Tekton を用いて Kubernetes 上で Blue / Green デプロイするための CD の整備
-                  - バックエンドの API を実行してプロバイダー用の情報を構成管理するための Ansible Module / Playbook の実装
+                  - バックエンドの API を実行してプロバイダー用の情報を管理するための Ansible Module / Playbook の実装
                   - ユーザーがファイアウォールや Managed Load Balancer を構成管理するやめの Terraform Provider の実装
-                  - OpenAPI を用いた API Reference の執筆、Postman によるシナリオテストの実装
+                  - OpenAPI を用いた API リファレンスの執筆、Postman によるシナリオテストの実装
               - icon: trophy
                 title: 実績 / 成果
                 points:
