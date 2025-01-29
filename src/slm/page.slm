@@ -41,7 +41,7 @@ html lang="${this.settings.language}"
                     - for point of detail[1]
                       li
                         span.fa-li
-                          i.fa-solid.fa-xs.fa-circle-small
+                          i.fa-regular.fa-xs.fa-circle-small
                         = point
           .clearfix
             .col-12.col-md-8.float-left.mt-4.mt-md-6.pr-0.pr-md-6
@@ -89,7 +89,7 @@ html lang="${this.settings.language}"
                                                   - for subpoint of point[1]
                                                     li
                                                       span.fa-li
-                                                        i.fa-solid.fa-xs.fa-circle-small
+                                                        i.fa-regular.fa-xs.fa-circle-small
                                                       = subpoint
                                               - else
                                                 span.fa-li
