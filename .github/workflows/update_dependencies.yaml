@@ -9,8 +9,8 @@ jobs:
     outputs:
       latest_node_version: ${{ steps.latest_node.outputs.version }}
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: set latest node version
         id: latest_node
         run: |
@@ -22,15 +22,15 @@ jobs:
     needs:
       - preparation
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
       - name: update node version
         env:
           LATEST: ${{ needs.preparation.outputs.latest_node_version }}
         run: |
           echo ${LATEST} > .node-version
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
+      # https://github.com/actions/setup-node/releases/tag/v4.3.0
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           cache: npm
           node-version-file: .node-version
@@ -43,8 +43,8 @@ jobs:
         run: |
           date=$(date '+%Y-%m-%d')
           echo "date=${date}" >> "${GITHUB_OUTPUT}"
-      # https://github.com/peter-evans/create-pull-request
-      - uses: peter-evans/create-pull-request@v5
+      # https://github.com/peter-evans/create-pull-request/releases/tag/v5.0.2
+      - uses: peter-evans/create-pull-request@153407881ec5c347639a548ade7d8ad1d6740e38
         id: create_pull_request
         with:
           branch: dependencies/${{ steps.date.outputs.date }}
@@ -52,8 +52,8 @@ jobs:
           labels: dependencies
           title: Update dependencies at ${{ steps.date.outputs.date }}
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-      # https://github.com/peter-evans/enable-pull-request-automerge
-      - uses: peter-evans/enable-pull-request-automerge@v3
+      # https://github.com/peter-evans/enable-pull-request-automerge/releases/tag/v3.0.0
+      - uses: peter-evans/enable-pull-request-automerge@a660677d5469627102a1c1e11409dd063606628d
         if: steps.create_pull_request.outputs.pull-request-operation == 'created'
         with:
           pull-request-number: ${{ steps.create_pull_request.outputs.pull-request-number }}

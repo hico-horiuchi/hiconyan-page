@@ -1,6 +1,25 @@
 {
   "hosting": {
-    "ignore": ["**/.*", "**/node_modules/**", "firebase.json"],
+    "headers": [
+      {
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "deny"
+          }
+        ],
+        "source": "**"
+      }
+    ],
+    "ignore": [
+      "**/.*",
+      "**/node_modules/**",
+      "firebase.json"
+    ],
     "public": "public",
     "rewrites": [
       {
