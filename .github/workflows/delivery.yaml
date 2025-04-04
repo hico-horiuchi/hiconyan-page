@@ -11,10 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      # https://github.com/actions/setup-node/releases/tag/v4.3.0
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           cache: npm
           node-version-file: .node-version
@@ -22,8 +22,8 @@ jobs:
         run: npm ci --production
       - name: build assets
         run: npm run build
-      # https://github.com/actions/upload-artifact
-      - uses: actions/upload-artifact@v4
+      # https://github.com/actions/upload-artifact/releases/tag/v4.6.2
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: public_${{ github.sha }}
           path: public/*
@@ -34,20 +34,20 @@ jobs:
     needs:
       - build
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      # https://github.com/actions/setup-node/releases/tag/v4.3.0
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           cache: npm
           node-version-file: .node-version
-      # https://github.com/actions/download-artifact
-      - uses: actions/download-artifact@v4
+      # https://github.com/actions/download-artifact/releases/tag/v4.2.1
+      - uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e
         with:
           name: public_${{ github.sha }}
           path: public
-      # https://github.com/google-github-actions/auth
-      - uses: google-github-actions/auth@v2
+      # https://github.com/google-github-actions/auth/releases/tag/v2.1.8
+      - uses: google-github-actions/auth@71f986410dfbc7added4569d411d040a91dc6935
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
@@ -77,15 +77,15 @@ jobs:
         github.event_name == 'pull_request'
       }}
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      # https://github.com/actions/setup-node/releases/tag/v4.3.0
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           cache: npm
           node-version-file: .node-version
-      # https://github.com/google-github-actions/auth
-      - uses: google-github-actions/auth@v2
+      # https://github.com/google-github-actions/auth/releases/tag/v2.1.8
+      - uses: google-github-actions/auth@71f986410dfbc7added4569d411d040a91dc6935
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
@@ -97,8 +97,8 @@ jobs:
           channel=$(echo ${{ github.head_ref }} | tr _ -)
           url=$(firebase hosting:channel:open ${channel} | awk '{ print $3 }')
           echo "url=${url}" >> ${GITHUB_OUTPUT}
-      # https://github.com/actions/github-script
-      - uses: actions/github-script@v7
+      # https://github.com/actions/github-script/releases/tag/v7.0.1
+      - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
           URL: ${{ steps.firebase_hosting_channel_open.outputs.url }}
         with:
@@ -127,10 +127,10 @@ jobs:
   security_check:
     runs-on: ubuntu-latest
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
-      # https://github.com/aquasecurity/trivy-action
-      - uses: aquasecurity/trivy-action@0.28.0
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      # https://github.com/aquasecurity/trivy-action/releases/tag/0.28.0
+      - uses: aquasecurity/trivy-action@915b19bbe73b92a6cf82a1bc12b087c9a19a5fe2
         with:
           scan-ref: package-lock.json
           scan-type: fs

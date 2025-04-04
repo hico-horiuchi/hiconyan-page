@@ -7,15 +7,15 @@ jobs:
   firebase_hosting:
     runs-on: ubuntu-latest
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v4
+      # https://github.com/actions/checkout/releases/tag/v4.2.2
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      # https://github.com/actions/setup-node/releases/tag/v4.3.0
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
           cache: npm
           node-version-file: .node-version
-      # https://github.com/google-github-actions/auth
-      - uses: google-github-actions/auth@v2
+      # https://github.com/google-github-actions/auth/releases/tag/v2.1.8
+      - uses: google-github-actions/auth@71f986410dfbc7added4569d411d040a91dc6935
         with:
           create_credentials_file: true
           credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
