@@ -29,9 +29,9 @@
     "gulp-slm": "~1.2",
     "js-yaml": "~4.1",
     "picomatch": "~4.0",
-    "sass": "~1.93"
+    "sass": "~1.97"
   },
   "devDependencies": {
-    "firebase-tools": "~14"
+    "firebase-tools": "~15"
   }
 }
