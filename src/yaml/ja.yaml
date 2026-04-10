@@ -103,8 +103,16 @@ summary:
 timelines:
   - experiences:
       - date:
-          begin_at: 2020/10
+          begin_at: 2026/04
           end_at: 現在
+        items:
+          - description: |
+              Smart Data Platform におけるファイアウォールと Managed Load Balancer のバックエンドの開発
+            icon: network-wired
+        title: エンジニアリングマネージャー、プラットフォームサービス本部
+      - date:
+          begin_at: 2020/10
+          end_at: 2026/03
         items:
           - description: |
               Smart Data Platform におけるファイアウォールと Managed Load Balancer のバックエンドの開発

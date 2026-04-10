@@ -95,8 +95,16 @@ summary:
 timelines:
   - experiences:
       - date:
-          begin_at: October 2020
+          begin_at: April 2026
           end_at: Present
+        items:
+          - description: |
+              Backend Development for Firewall and Managed Load Balancer of Smart Data Platform
+            icon: network-wired
+        title: Engineering Manager, Platform Services
+      - date:
+          begin_at: October 2020
+          end_at: March 2026
         items:
           - description: |
               Backend Development for Firewall and Managed Load Balancer of Smart Data Platform
