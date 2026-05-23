@@ -13,7 +13,7 @@
   },
   "sandbox": {
     "filesystem": {
-      "allowRead": [".", "~/.npmrc"],
+      "allowRead": [".", "~/.npm/", "~/.npmrc"],
       "allowWrite": ["~/.npm/"]
     },
     "network": {
