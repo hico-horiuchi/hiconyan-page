@@ -83,15 +83,15 @@ skills:
       - OpenAPI, Postman
 summary:
   description: |
-    Software Engineer with extensive experience in the development of public cloud services.
+    Working on the development of public cloud services at NTT DOCOMO BUSINESS.
   details:
-    - - My primary focus is on developing the backend of cloud services.
+    - - Serving as Engineering Manager / Team Leader for a cloud services development team.
+      - - Leading decision-making and problem-solving on development with a focus on sustainability and extensibility in backend architecture and service specifications.
+        - Enhancing service value and quality through collaborating with product and operations teams to define service specifications.
+        - Coordinating with other microservice teams and the SRE team to ensure seamless integration and continuous improvement.
+    - - Built a strong technical foundation through years of hands-on backend development for cloud services as a software engineer.
       - - Designed and implemented REST APIs to provide networks and servers as a service, background jobs (workflows) for provisioning these resources, and monitoring systems to collect metrics for users.
         - Led the design of backend architecture, established CI / CD pipelines, and migrated the infrastructure from virtual servers on-premises to Kubernetes on the cloud service.
-    - - In my role, I have also served as Tech Lead or Scrum Master.
-      - - Leading decision-making and problem-solving on development with a focus on sustainability and extensibility in backend architecture and service specifications.
-        - Enhancing service value and quality by collaborating with product and operations teams to define service specifications.
-        - Coordinating with other microservice teams and the SRE team to ensure seamless integration and continuous improvement.
 timelines:
   - experiences:
       - date:
@@ -99,7 +99,25 @@ timelines:
           end_at: Present
         items:
           - description: |
-              Backend Development for Firewall and Managed Load Balancer of Smart Data Platform
+              Management of Network Function Services Development Team of Smart Data Platform
+            details:
+              - icon: user
+                title: Team & Role
+                points:
+                  - Engineering Manager / Team Leader on the team of 5+ people
+              - icon: flag
+                title: Mission & Responsibilities
+                points:
+                  - - Network Function Service Development and Operations
+                    - - Leading backend development and maintenance operations for self-managed / fully-managed network function services.
+                      - Driving expansion of services, improving profitability, and exploring new features to maximize value.
+                      - Improving development productivity, code quality, and release velocity to deliver outcomes safely and rapidly.
+                  - - Autonomous Development Process with AI Agents
+                    - - Driving AI agent-driven development processes to improve developer experience and development productivity.
+                  - - In-House Application Framework and CI / CD Tools Contributions
+                    - - Contributing to feature additions and usability improvements to the in-house framework and tools to ensure service value and continuity.
+                  - - Talent Acquisition and Product Outreach
+                    - - Recruiting talent for the team, raising product and company visibility through internal and external presentations.
             icon: network-wired
         title: Engineering Manager, Platform Services
       - date:
@@ -166,7 +184,7 @@ timelines:
                 points:
                   - "Release Automation: Reduced operational workload and minimized human errors by automating release processes using Jenkins and Ansible, ensuring idempotency and consistency."
                   - "PXE Issue Resolution: Resolved RHEL / CentOS boot issues via iPXE by evaluating and introducing pxelinux, successfully achieving the planned release."
-                  - "Process Improvement: Contributed to reducing construction period for region and group expansions by collaborating with the delivery team to redesign and optimize procedures and processes."
+                  - "Process Improvement: Contributed to reducing construction period for region and group expansions through collaborating with the delivery team to redesign and optimize procedures and processes."
             icon: server
         title: Software Engineer, Platform Services
     name: NTT DOCOMO BUSINESS, Inc.
