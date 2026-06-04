@@ -8,7 +8,10 @@
       "WebFetch(domain:cdnjs.cloudflare.com)",
       "WebFetch(domain:unpkg.com)",
       "WebFetch(domain:fontawesome.com)",
-      "WebFetch(domain:primer.style)"
+      "WebFetch(domain:primer.style)",
+      "WebFetch(domain:sdpf.ntt.com)",
+      "WebFetch(domain:docs.sdk.qmonus.net)",
+      "WebFetch(domain:docs.valuestream.qmonus.net)"
     ]
   },
   "sandbox": {
@@ -24,7 +27,10 @@
         "cdnjs.cloudflare.com",
         "unpkg.com",
         "fontawesome.com",
-        "primer.style"
+        "primer.style",
+        "sdpf.ntt.com",
+        "docs.sdk.qmonus.net",
+        "docs.valuestream.qmonus.net"
       ]
     }
   }
