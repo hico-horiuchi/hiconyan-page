@@ -27,7 +27,7 @@
     "gulp-rename": "~2.1",
     "gulp-sass": "~6.0",
     "gulp-slm": "1.2.4",
-    "js-yaml": "~4.1",
+    "js-yaml": "~4.2",
     "picomatch": "~4.0",
     "sass": "~1.97"
   },
