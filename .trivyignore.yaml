@@ -1,4 +1,7 @@
 ---
 vulnerabilities:
+  # qs
+  - id: CVE-2026-82417
+  - id: CVE-2026-82562
   # send
   - id: CVE-2024-43799
