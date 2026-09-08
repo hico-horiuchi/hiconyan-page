@@ -13,9 +13,6 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:www.npmjs.com)",
       "WebFetch(domain:registry.npmjs.org)",
-      "WebFetch(domain:cdn.jsdelivr.net)",
-      "WebFetch(domain:cdnjs.cloudflare.com)",
-      "WebFetch(domain:unpkg.com)",
       "WebFetch(domain:fontawesome.com)",
       "WebFetch(domain:primer.style)",
       "WebFetch(domain:sdpf.ntt.com)",
@@ -24,8 +21,10 @@
     ],
     "ask": [
       "Edit(.github/workflows/**)",
+      "Edit(.gitignore)",
       "Edit(.trivy.yaml)",
-      "Edit(.trivyignore.yaml)"
+      "Edit(.trivyignore.yaml)",
+      "Edit(.firebaserc)"
     ],
     "deny": [
       "Bash(rm:*)",
@@ -51,9 +50,10 @@
       ],
       "denyWrite": [
         ".github/workflows",
-        ".pre-commit-config.yaml",
+        ".gitignore",
         ".trivy.yaml",
-        ".trivyignore.yaml"
+        ".trivyignore.yaml",
+        ".firebaserc"
       ]
     },
     "network": {
@@ -64,9 +64,6 @@
         "raw.githubusercontent.com",
         "www.npmjs.com",
         "registry.npmjs.org",
-        "cdn.jsdelivr.net",
-        "cdnjs.cloudflare.com",
-        "unpkg.com",
         "fontawesome.com",
         "primer.style",
         "sdpf.ntt.com",
