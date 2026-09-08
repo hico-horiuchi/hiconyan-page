@@ -20,7 +20,8 @@ src/scss/project.scss  →  gulp-sass + csso (minify)  →  public/app.min.css
 **全ての表示コンテンツは YAML ファイルで管理する。**
 
 - `src/yaml/en.yaml` / `src/yaml/ja.yaml` — プロフィール・スキル・職歴・資格・リンクなどを言語別に定義
-- テンプレートは `page.slm` の 1 ファイルを英日共有。言語切り替えは `settings.language` フィールドで制御
+- テンプレートは `page.slm` の 1 ファイルを英日で共有
+- 言語切り替えは `settings.language` フィールドで制御
 - `index.html` は言語選択ランディングページ (`index.slm`)
 
 ### スタイル
