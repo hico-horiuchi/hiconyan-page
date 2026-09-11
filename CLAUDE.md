@@ -27,7 +27,7 @@ src/scss/project.scss  →  gulp-sass + csso (minify)  →  public/app.min.css
 ### スタイル
 
 - `@primer/css` を基盤とし、`src/scss/` 配下のモジュール (banner, box, colors, icon, timeline, utilities, variables) で上書き・拡張
-- Google Fonts: M PLUS 1p (日本語) / Ubuntu (英語)
+- Google Fonts: LINE Seed JP (英日共通)
 - Font Awesome Kit ID は YAML の `settings.fontawesome.kit` で指定
 
 ### デプロイ

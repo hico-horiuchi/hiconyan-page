@@ -4,7 +4,7 @@
 
 html[lang="en"] *,
 .text-en {
-  font-family: "Ubuntu", serif !important;
+  font-family: "LINE Seed JP", sans-serif !important;
 
   &:not(i) {
     letter-spacing: 0.02rem;
@@ -13,7 +13,7 @@ html[lang="en"] *,
 
 html[lang="ja"] *,
 .text-ja {
-  font-family: "M PLUS 1p", serif !important;
+  font-family: "LINE Seed JP", sans-serif !important;
 }
 
 i[class^="fa-"],
