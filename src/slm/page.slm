@@ -53,54 +53,59 @@ html lang="${this.settings.language}"
                         i.fa-solid.fa-building
                       - if timeline.type === "school"
                         i.fa-solid.fa-school
-                    .TimelineItem-body.st-3
+                    .TimelineItem-body.st-4
                       .color-fg-muted.h3.text-semibold
                         | ${timeline.name} (${timeline.place})
                       - for experience of timeline.experiences
                         .color-fg-muted
-                          .h4.text-normal
+                          .h4.text-semibold
+                            i.fa-duotone.fa-lg.mr-2 class="fa-${experience.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                            = experience.title
+                          .h6.mt-1.text-normal
                             - if this.settings.language === "ja"
-                              | ${experience.date.begin_at} 〜 ${experience.date.end_at}、${experience.title}
+                              | ${experience.date.begin_at} 〜 ${experience.date.end_at}
                             - else
-                              | ${experience.date.begin_at} - ${experience.date.end_at}, ${experience.title}
-                          ul.color-fg-muted.fa-ul.mt-3.st-2
-                            - for item of experience.items
-                              li.h5.text-normal
-                                span.fa-li
-                                  i.fa-duotone.fa-xl class="fa-${item.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
-                                = item.description
-                              - if item.details
-                                li.h6.text-normal
-                                  ul.fa-ul.mt-3.st-2
-                                    - for detail of item.details
-                                      li
-                                        span.fa-li
-                                          i.fa-duotone.fa-xl class="fa-${detail.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
-                                        = detail.title
-                                        ul.fa-ul.mt-2.st-2
-                                          - for point of detail.points
-                                            li
-                                              - if Array.isArray(point)
-                                                span.fa-li
-                                                  i.fa-solid.fa-xs.fa-circle-small
-                                                span.text-semibold
-                                                  = point[0]
-                                                ul.fa-ul.mt-2.st-2
-                                                  - for subpoint of point[1]
-                                                    li
-                                                      span.fa-li
-                                                        i.fa-regular.fa-xs.fa-circle-small
-                                                      = subpoint
-                                              - else
-                                                span.fa-li
-                                                  i.fa-solid.fa-xs.fa-circle-small
-                                                - subpoints = point.split(':')
-                                                - if subpoints.length === 1
-                                                  = point
-                                                - else
-                                                  span.text-semibold
-                                                    | ${subpoints[0]}:
-                                                  = subpoints[1]
+                              | ${experience.date.begin_at} - ${experience.date.end_at}
+                          .h5.mt-3.text-normal
+                            = experience.summary
+                          - if experience.details
+                            details.details-reset.mt-3
+                              summary.color-fg-theme.h6.text-normal
+                                i.fa-solid.fa-chevron-right.fa-xs.mr-2
+                                - if this.settings.language === "ja"
+                                  | 詳細を表示
+                                - else
+                                  | Show details
+                              ul.color-fg-muted.fa-ul.h6.mt-3.st-3.text-normal
+                                - for detail of experience.details
+                                  li
+                                    span.fa-li
+                                      i.fa-duotone.fa-xl class="fa-${detail.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
+                                    = detail.title
+                                    ul.fa-ul.mt-2.st-2
+                                      - for point of detail.points
+                                        li
+                                          - if Array.isArray(point)
+                                            span.fa-li
+                                              i.fa-solid.fa-xs.fa-circle-small
+                                            span.text-semibold
+                                              = point[0]
+                                            ul.fa-ul.mt-2.st-2
+                                              - for subpoint of point[1]
+                                                li
+                                                  span.fa-li
+                                                    i.fa-regular.fa-xs.fa-circle-small
+                                                  = subpoint
+                                          - else
+                                            span.fa-li
+                                              i.fa-solid.fa-xs.fa-circle-small
+                                            - subpoints = point.split(':')
+                                            - if subpoints.length === 1
+                                              = point
+                                            - else
+                                              span.text-semibold
+                                                | ${subpoints[0]}:
+                                              = subpoints[1]
             .col-12.col-md-4.float-left.mt-4.mt-md-6
               .color-fg-muted.h3.text-semibold
                 - if this.settings.language === "ja"
@@ -117,12 +122,18 @@ html lang="${this.settings.language}"
                         - else
                           i.fa-xl.fa-duotone class="fa-${skill.icon}" style="--fa-secondary-color: var(--color-fg-theme); --fa-secondary-opacity: 0.8;"
                       = skill.title
-                      ul.fa-ul.h6.mt-3.st-2.text-normal
+                      .d-flex.flex-items-start.flex-wrap.mt-2
                         - for item of skill.items
-                          li
-                            span.fa-li
-                              i.fa-solid.fa-xs.fa-circle-small
-                            = item
+                          - if item.items
+                            .d-inline-flex.flex-wrap.mr-3
+                              span.Label.Label--theme.mb-1.mr-1
+                                = item.title
+                              - for child of item.items
+                                span.Label.Label--secondary.mb-1.mr-1
+                                  = child
+                          - else
+                            span.Label.Label--theme.mb-1.mr-1
+                              = item.title
               .color-fg-muted.h3.mt-4.mt-mb-6.text-semibold
                 - if this.settings.language === "ja"
                   | 資格

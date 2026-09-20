@@ -28,7 +28,7 @@
   }
 
   .TimelineItem-body {
-    > div {
+    > div > details {
       > .fa-ul {
         margin-left: calc(var(--fa-li-margin) + 0.5em);
       }

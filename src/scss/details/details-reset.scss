@@ -1,0 +1,23 @@
+//--------------------------------------------------
+// Details: details-reset
+//--------------------------------------------------
+
+.details-reset {
+  > summary {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    i[class^="fa-"] {
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  &[open] {
+    > summary i[class^="fa-"] {
+      transform: rotate(90deg);
+    }
+  }
+}
