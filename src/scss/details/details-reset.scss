@@ -10,13 +10,13 @@
       text-decoration: underline;
     }
 
-    i[class^="fa-"] {
+    .fa-chevron-right {
       transition: transform 0.2s ease-in-out;
     }
   }
 
   &[open] {
-    > summary i[class^="fa-"] {
+    > summary .fa-chevron-right {
       transform: rotate(90deg);
     }
   }
