@@ -53,34 +53,72 @@ skills:
   - icon: code
     title: Programming Languages, Frameworks, Libraries
     items:
-      - Python (Tornado, pytest, Ansible Module)
-      - Ruby (Ruby on Rails, Sidekiq, RSpec)
-      - Go (Terraform Provider)
-      - JavaScript (React, Vue.js, Mithril.js)
+      - title: Python
+        items:
+          - Tornado
+          - pytest
+          - Ansible Module
+      - title: Ruby
+        items:
+          - Ruby on Rails
+          - Sidekiq
+          - RSpec
+      - title: Go
+        items:
+          - Terraform Provider
+      - title: JavaScript
+        items:
+          - React
+          - Vue.js
+          - Mithril.js
   - icon: screwdriver-wrench
     title: Tools, Technologies
     items:
-      - Ansible
-      - Consul, Terraform
-      - Docker, Kubernetes (Argo Rollouts, Tekton)
-      - Git, GitHub (Actions)
-      - Fluentd, Elasticsearch, Kibana
-      - QEMU, KVM, libvirt
+      - title: Ansible
+      - title: Consul
+      - title: Terraform
+      - title: Docker
+      - title: Kubernetes
+        items:
+          - Argo Rollouts
+          - Tekton
+      - title: Git
+      - title: GitHub
+        items:
+          - Actions
+      - title: Fluentd
+      - title: Elasticsearch
+      - title: Kibana
+      - title: QEMU
+      - title: KVM
+      - title: libvirt
   - icon: computer-classic
     title: Operating Systems, Middleware
     items:
-      - Linux (RHEL / CentOS, Ubuntu), VMware (ESXi)
-      - Redis, RabbitMQ
+      - title: Linux
+        items:
+          - RHEL / CentOS
+          - Ubuntu
+      - title: VMware
+        items:
+          - ESXi
+      - title: Redis
+      - title: RabbitMQ
   - icon: arrows-spin
     title: CI / CD, DevOps
     items:
-      - Jenkins
-      - Prow
+      - title: Jenkins
+      - title: Prow
   - icon: gears
     title: Others
     items:
-      - IPMI, Redfish, PXE, Kickstart, Preseed
-      - OpenAPI, Postman
+      - title: IPMI
+      - title: Redfish
+      - title: PXE
+      - title: Kickstart
+      - title: Preseed
+      - title: OpenAPI
+      - title: Postman
 summary:
   description: |
     Working on the development of public cloud services at NTT DOCOMO BUSINESS.
@@ -97,95 +135,98 @@ timelines:
       - date:
           begin_at: April 2026
           end_at: Present
-        items:
-          - description: |
-              Management of Network Function Services Development Team of Smart Data Platform
-            details:
-              - icon: user
-                title: Team & Role
-                points:
-                  - Engineering Manager / Team Leader on the team of 5+ people
-              - icon: flag
-                title: Mission & Responsibilities
-                points:
-                  - - Network Function Service Development and Operations
-                    - - Leading backend development and maintenance operations for self-managed / fully-managed network function services.
-                      - Driving expansion of services, improving profitability, and exploring new features to maximize value.
-                      - Improving development productivity, code quality, and release velocity to deliver outcomes safely and rapidly.
-                  - - Autonomous Development Process with AI Agents
-                    - - Driving AI agent-driven development processes to improve developer experience and development productivity.
-                  - - In-House Application Framework and CI / CD Tools Contributions
-                    - - Contributing to feature additions and usability improvements to the in-house framework and tools to ensure service value and continuity.
-                  - - Talent Acquisition and Product Outreach
-                    - - Recruiting talent for the team, raising product and company visibility through internal and external presentations.
-            icon: network-wired
+        details:
+          - icon: user
+            title: Team & Role
+            points:
+              - Engineering Manager / Team Leader on the team of 5+ people
+          - icon: flag
+            title: Mission & Responsibilities
+            points:
+              - - Network Function Service Development and Operations
+                - - Leading backend development and maintenance operations for self-managed / fully-managed network function services.
+                  - Driving expansion of services, improving profitability, and exploring new features to maximize value.
+                  - Improving development productivity, code quality, and release velocity to deliver outcomes safely and rapidly.
+              - - Autonomous Development Process with AI Agents
+                - - Driving AI agent-driven development processes to improve developer experience and development productivity.
+              - - In-House Application Framework and CI / CD Tools Contributions
+                - - Contributing to feature additions and usability improvements to the in-house framework and tools to ensure service value and continuity.
+              - - Talent Acquisition and Product Outreach
+                - - Recruiting talent for the team, raising product and company visibility through internal and external presentations.
+        icon: network-wired
+        summary: |
+          Leading backend development and maintenance operations for network function services of Smart Data Platform.
+          Driving expansion of services and improving profitability, while enhancing development productivity, code quality, and release velocity.
+          Exploring autonomous development processes with AI agents, and leading talent acquisition for the team.
         title: Engineering Manager, Platform Services
       - date:
           begin_at: October 2020
           end_at: March 2026
-        items:
-          - description: |
-              Backend Development for Firewall and Managed Load Balancer of Smart Data Platform
-            details:
-              - icon: user
-                title: Team & Role
-                points:
-                  - Tech Lead / Developer on the team of 5+ people
-              - icon: flag
-                title: Mission & Responsibilities
-                points:
-                  - - Backend Development using Python (Tornado)
-                    - - Designed and implemented REST APIs to provide self-managed firewalls and fully-managed load balancers.
-                      - Designed and implemented background jobs (workflows) to deploy network products (e.g., vSRX) on virtual servers and configure them via REST APIs.
-                      - Designed and implemented monitoring systems to collect metrics from network products (e.g., vSRX) via REST APIs and SNMP.
-                  - - CI / CD Pipeline Management
-                    - - Configured CI pipelines to integrate pytest using Prow, and to integrate Ruff  using GitHub Actions.
-                      - Configured CD pipelines for Blue / Green Deployment on Kubernetes using Argo Rollouts and Tekton.
-                  - - Infrastructure Automation
-                    - - Developed Ansible modules and playbooks to automate provider configurations via backend APIs.
-                      - Developed Terraform providers to enable users to manage Firewall and Managed Load Balancer resources.
-                  - - Documentation and Testing
-                    - - Authored API references using OpenAPI and implemented scenario tests using Postman.
-              - icon: trophy
-                title: Accomplishments
-                points:
-                  - "Managed Load Balancer: Designed the backend from scratch, designed the frontend interface, and collaborated with product and operation teams to define service specifications, successfully achieving the planned release."
-                  - "Firewall: Established a method to migrate the backend infrastructure from virtual servers on-premises to Kubernetes on the cloud service, and completed the migration in production without issues."
-                  - "Internal Software: Contributed to overall quality of the service by fixing bugs and enhancing features to the in-house application framework and CI / CD tools, and sharing these improvements with other teams."
-            icon: network-wired
+        details:
+          - icon: user
+            title: Team & Role
+            points:
+              - Tech Lead / Developer on the team of 5+ people
+          - icon: flag
+            title: Mission & Responsibilities
+            points:
+              - - Backend Development using Python (Tornado)
+                - - Designed and implemented REST APIs to provide self-managed firewalls and fully-managed load balancers.
+                  - Designed and implemented background jobs (workflows) to deploy network products (e.g., vSRX) on virtual servers and configure them via REST APIs.
+                  - Designed and implemented monitoring systems to collect metrics from network products (e.g., vSRX) via REST APIs and SNMP.
+              - - CI / CD Pipeline Management
+                - - Configured CI pipelines to integrate pytest using Prow, and to integrate Ruff  using GitHub Actions.
+                  - Configured CD pipelines for Blue / Green Deployment on Kubernetes using Argo Rollouts and Tekton.
+              - - Infrastructure Automation
+                - - Developed Ansible modules and playbooks to automate provider configurations via backend APIs.
+                  - Developed Terraform providers to enable users to manage Firewall and Managed Load Balancer resources.
+              - - Documentation and Testing
+                - - Authored API references using OpenAPI and implemented scenario tests using Postman.
+          - icon: trophy
+            title: Accomplishments
+            points:
+              - "Managed Load Balancer: Designed the backend from scratch, designed the frontend interface, and collaborated with product and operation teams to define service specifications, successfully achieving the planned release."
+              - "Firewall: Established a method to migrate the backend infrastructure from virtual servers on-premises to Kubernetes on the cloud service, and completed the migration in production without issues."
+              - "Internal Software: Contributed to overall quality of the service by fixing bugs and enhancing features to the in-house application framework and CI / CD tools, and sharing these improvements with other teams."
+        icon: network-wired
+        summary: |
+          Developed the backend for Firewall and Managed Load Balancer of Smart Data Platform using Python (Tornado).
+          Designed and implemented background jobs to deploy and configure network products on virtual servers, and monitoring systems to collect their metrics.
+          Configured CI pipelines using Prow and GitHub Actions, and CD pipelines for Blue / Green Deployment on Kubernetes using Argo Rollouts and Tekton.
         title: Senior Software Engineer, Platform Services
       - date:
           begin_at: April 2016
           end_at: September 2020
-        items:
-          - description: |
-              Backend Development for Baremetal Server and Dedicated Hypervisor of Smart Data Platform
-            details:
-              - icon: user
-                title: Team & Role
-                points:
-                  - Scrum Master / Developer on the team of 10+ people
-              - icon: flag
-                title: Mission & Responsibilities
-                points:
-                  - - Backend Development using Ruby (Ruby on Rails, Sidekiq)
-                    - - Designed and implemented REST APIs for on-demand provisioning of physical servers and hypervisors.
-                      - Designed and implemented background jobs (workflows) to configure BIOS / UEFI of physical servers using BMC (iLO, iDRAC, iRMC, etc.).
-                      - Designed and implemented background jobs (workflows) to install operating systems (e.g., RHEL/CentOS, Ubuntu, ESXi) on physical servers using PXE, Kickstart, and Preseed.
-                      - Designed and implemented monitoring systems to collect metrics from physical servers via REST APIs and SNMP.
-                  - - CI / CD Pipeline Management
-                    - - Configured CI pipelines to integrate RSpec using Jenkins, and to integrate Rubocop using GitHub Actions.
-                      - Configured CD pipelines for Blue / Green Deployment on virtual servers using Jenkins and Ansible.
-                  - - On-premises Backend Infrastructure Operations
-                    - - Maintained and managed Redis and RabbitMQ.
-                      - Built monitoring and logging platforms using Consul, Fluentd, Elasticsearch, and Kibana.
-              - icon: trophy
-                title: Accomplishments
-                points:
-                  - "Release Automation: Reduced operational workload and minimized human errors by automating release processes using Jenkins and Ansible, ensuring idempotency and consistency."
-                  - "PXE Issue Resolution: Resolved RHEL / CentOS boot issues via iPXE by evaluating and introducing pxelinux, successfully achieving the planned release."
-                  - "Process Improvement: Contributed to reducing construction period for region and group expansions through collaborating with the delivery team to redesign and optimize procedures and processes."
-            icon: server
+        details:
+          - icon: user
+            title: Team & Role
+            points:
+              - Scrum Master / Developer on the team of 10+ people
+          - icon: flag
+            title: Mission & Responsibilities
+            points:
+              - - Backend Development using Ruby (Ruby on Rails, Sidekiq)
+                - - Designed and implemented REST APIs for on-demand provisioning of physical servers and hypervisors.
+                  - Designed and implemented background jobs (workflows) to configure BIOS / UEFI of physical servers using BMC (iLO, iDRAC, iRMC, etc.).
+                  - Designed and implemented background jobs (workflows) to install operating systems (e.g., RHEL/CentOS, Ubuntu, ESXi) on physical servers using PXE, Kickstart, and Preseed.
+                  - Designed and implemented monitoring systems to collect metrics from physical servers via REST APIs and SNMP.
+              - - CI / CD Pipeline Management
+                - - Configured CI pipelines to integrate RSpec using Jenkins, and to integrate Rubocop using GitHub Actions.
+                  - Configured CD pipelines for Blue / Green Deployment on virtual servers using Jenkins and Ansible.
+              - - On-premises Backend Infrastructure Operations
+                - - Maintained and managed Redis and RabbitMQ.
+                  - Built monitoring and logging platforms using Consul, Fluentd, Elasticsearch, and Kibana.
+          - icon: trophy
+            title: Accomplishments
+            points:
+              - "Release Automation: Reduced operational workload and minimized human errors by automating release processes using Jenkins and Ansible, ensuring idempotency and consistency."
+              - "PXE Issue Resolution: Resolved RHEL / CentOS boot issues via iPXE by evaluating and introducing pxelinux, successfully achieving the planned release."
+              - "Process Improvement: Contributed to reducing construction period for region and group expansions through collaborating with the delivery team to redesign and optimize procedures and processes."
+        icon: server
+        summary: |
+          Developed the backend for Baremetal Server and Dedicated Hypervisor of Smart Data Platform using Ruby (Ruby on Rails, Sidekiq).
+          Designed and implemented background jobs for on-demand provisioning of physical servers, including BIOS / UEFI configuration via BMC and OS installation via PXE.
+          Configured CI / CD pipelines using Jenkins and Ansible, and operated the backend infrastructure on-premises.
         title: Software Engineer, Platform Services
     name: NTT DOCOMO BUSINESS, Inc.
     place: Tokyo, Japan
@@ -194,13 +235,10 @@ timelines:
       - date:
           begin_at: April 2014
           end_at: March 2016
-        items:
-          - description: |
-              Developed web applications for managing advertisements and schedules
-            icon: browser
-          - description: |
-              Built monitoring and logging platforms for web applications
-            icon: monitor-heart-rate
+        icon: browser
+        summary: |
+          Developed web applications for managing advertisements and schedules.
+          Built monitoring and logging platforms for these web applications.
         title: Software Engineer (Part Time)
     name: Aqutras Inc.
     place: Kagawa, Japan
@@ -209,28 +247,28 @@ timelines:
       - date:
           begin_at: April 2014
           end_at: March 2016
-        items:
-          - description: |
-              Studied and researched reliability-based information systems engineering
-            details:
-              - icon: pen-nib
-                title: Thesis
-                points:
-                  - Improving and evaluating auto-scaling algorithm for distributed web systems
-            icon: graduation-cap
+        details:
+          - icon: pen-nib
+            title: Thesis
+            points:
+              - Improving and evaluating auto-scaling algorithm for distributed web systems
+        icon: graduation-cap
+        summary: |
+          Studied and researched reliability-based information systems engineering.
+          Focused on the performance and reliability of distributed web systems, working on improving auto-scaling algorithms for cloud environments.
         title: Master of Engineering
       - date:
           begin_at: April 2010
           end_at: March 2014
-        items:
-          - description: |
-              Studied and researched reliability-based information systems engineering
-            details:
-              - icon: pen-nib
-                title: Thesis
-                points:
-                  - Improving and evaluating load observation function of web systems fit for cloud
-            icon: graduation-cap
+        details:
+          - icon: pen-nib
+            title: Thesis
+            points:
+              - Improving and evaluating load observation function of web systems fit for cloud
+        icon: graduation-cap
+        summary: |
+          Studied and researched reliability-based information systems engineering.
+          Focused on monitoring and load balancing of web systems, working on improving load observation functions fit for cloud environments.
         title: Bachelor of Engineering
     name: Kagawa University
     place: Kagawa, Japan
