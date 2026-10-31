@@ -1,54 +1,32 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
-## アーキテクチャ
-
-静的ポートフォリオサイト。Gulp でビルドし Firebase Hosting にデプロイする。
-
-### データフロー
-
-```
-src/yaml/{en,ja}.yaml  →  gulpfile.js (js-yaml で読み込み)
-src/slm/page.slm       →  gulp-slm でレンダリング  →  public/{en,ja}.html
-src/slm/index.slm      →  gulp-slm でレンダリング  →  public/index.html
-src/scss/project.scss  →  gulp-sass + csso (minify)  →  public/app.min.css
-```
-
-### コンテンツ管理
-
-**全ての表示コンテンツは YAML ファイルで管理する。**
-
-- `src/yaml/en.yaml` / `src/yaml/ja.yaml` — プロフィール・スキル・職歴・資格・リンクなどを言語別に定義
-- テンプレートは `page.slm` の 1 ファイルを英日で共有
-- 言語切り替えは `settings.language` フィールドで制御
-- `index.html` は言語選択ランディングページ (`index.slm`)
-
-### スタイル
-
-- `@primer/css` を基盤とし、`src/scss/` 配下のモジュール (banner, box, colors, icon, timeline, utilities, variables) で上書き・拡張
-- Google Fonts: LINE Seed JP (英日共通)
-- Font Awesome Kit ID は YAML の `settings.fontawesome.kit` で指定
-
-### デプロイ
-
-- Pull Request 作成時: ブランチ名に対応した Firebase Hosting プレビューチャンネルへ自動デプロイ (`dependencies` ラベル付き Pull Request は除外)
-- `master` push 時: 本番へ自動デプロイ
-- セキュリティスキャン: Trivy で `package-lock.json` を毎 Pull Request チェック
+Gulp でビルドし Firebase Hosting にデプロイする静的ポートフォリオサイト。
 
 ## コマンド
 
-```bash
+```shell
 npm install      # 依存パッケージのインストール
-npm run build    # 全アセットをビルド (gulp default)
-npm run preview  # ファイル監視 + ローカルサーバー起動 (livereload, http://localhost:8080)
-```
-
-個別タスク:
-
-```bash
+npm run build    # 全アセットをビルド (テストスクリプトはなく、これを動作確認に使う)
+npm run preview  # ファイル監視 + ローカルサーバー起動 (http://localhost:8080)
 npx gulp css     # CSS のみビルド
 npx gulp html    # HTML のみビルド (3 ページ全て)
 ```
 
-テストスクリプトはなし。
+## 規約
+
+- 表示コンテンツは全て `src/yaml/{en,ja}.yaml` で管理し、テンプレートに直接書かない
+- `src/slm/page.slm` は英日で共有するため、キーは `en.yaml` と `ja.yaml` の両方に追加する
+- 言語ごとの分岐は `settings.language` で判定する
+- 画像は `public/images/` に直接置く (`public/` の HTML と CSS はビルド成果物)
+
+## 注意点
+
+- `npm run preview` は起動時にビルドしないため、先に `npm run build` を実行する
+- ブラウザは自動で更新されないため、手動で再読み込みする
+- `src/scss/` のサブディレクトリの変更は監視されないため、`npx gulp css` を実行する
+- YAML の変更では `index.html` が更新されないため、`npx gulp html` を実行する
+
+## デプロイ
+
+- Pull Request の作成 / 更新時: ブランチ名に対応した Firebase Hosting プレビューチャンネルへ自動デプロイする (`dependencies` ラベル付きは除外)
+- `master` への push 時: 本番へ自動デプロイする
