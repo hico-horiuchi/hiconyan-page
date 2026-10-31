@@ -8,17 +8,15 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:api.github.com)",
-      "WebFetch(domain:gist.github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:results-receiver.actions.githubusercontent.com)",
-      "WebFetch(domain:www.npmjs.com)",
-      "WebFetch(domain:registry.npmjs.org)",
+      "WebFetch(domain:*.github.com)",
+      "WebFetch(domain:*.githubusercontent.com)",
+      "WebFetch(domain:*.npmjs.com)",
+      "WebFetch(domain:*.npmjs.org)",
       "WebFetch(domain:fontawesome.com)",
+      "WebFetch(domain:*.fontawesome.com)",
       "WebFetch(domain:primer.style)",
-      "WebFetch(domain:sdpf.ntt.com)",
-      "WebFetch(domain:docs.sdk.qmonus.net)",
-      "WebFetch(domain:docs.valuestream.qmonus.net)"
+      "WebFetch(domain:*.ntt.com)",
+      "WebFetch(domain:*.qmonus.net)"
     ],
     "ask": [
       "Edit(.github/workflows/**)",
@@ -59,18 +57,6 @@
     },
     "network": {
       "allowedDomains": [
-        "github.com",
-        "api.github.com",
-        "gist.github.com",
-        "raw.githubusercontent.com",
-        "results-receiver.actions.githubusercontent.com",
-        "www.npmjs.com",
-        "registry.npmjs.org",
-        "fontawesome.com",
-        "primer.style",
-        "sdpf.ntt.com",
-        "docs.sdk.qmonus.net",
-        "docs.valuestream.qmonus.net",
         "ghcr.io",
         "public.ecr.aws"
       ]
