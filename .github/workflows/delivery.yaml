@@ -37,7 +37,7 @@ jobs:
       ${{
         contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) ||
         (github.event_name == 'pull_request' &&
-         contains(github.event.pull_request.labels.*.name, 'dependencies') == false)
+         !startsWith(github.head_ref, 'dependencies/'))
       }}
     needs:
       - build
@@ -66,13 +66,13 @@ jobs:
       - name: create firebase hosting channel
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          channel=$(echo ${{ github.head_ref }} | tr _/ --)
           firebase hosting:channel:create ${channel}
         continue-on-error: true
       - name: deploy to firebase hosting channel
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          channel=$(echo ${{ github.head_ref }} | tr _/ --)
           firebase hosting:channel:deploy ${channel}
       - name: deploy to firebase
         if: ${{ github.event_name == 'push' }}
@@ -84,7 +84,7 @@ jobs:
     if: >-
       ${{
         github.event_name == 'pull_request' &&
-        contains(github.event.pull_request.labels.*.name, 'dependencies') == false
+        !startsWith(github.head_ref, 'dependencies/')
       }}
     steps:
       # https://github.com/actions/checkout/releases/tag/v4.2.2
@@ -106,7 +106,7 @@ jobs:
       - name: set url for firebase hosting channel
         id: firebase_hosting_channel_open
         run: |
-          channel=$(echo ${{ github.head_ref }} | tr _ -)
+          channel=$(echo ${{ github.head_ref }} | tr _/ --)
           url=$(firebase hosting:channel:open ${channel} | awk '{ print $3 }')
           echo "url=${url}" >> ${GITHUB_OUTPUT}
       # https://github.com/actions/github-script/releases/tag/v7.0.1
