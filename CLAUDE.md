@@ -28,5 +28,5 @@ npx gulp html    # HTML のみビルド (3 ページ全て)
 
 ## デプロイ
 
-- Pull Request の作成 / 更新時: ブランチ名に対応した Firebase Hosting プレビューチャンネルへ自動デプロイする (`dependencies` ラベル付きは除外)
+- Pull Request の作成 / 更新時: ブランチ名に対応した Firebase Hosting プレビューチャンネルへ自動デプロイする (`dependencies/` で始まるブランチは除外)
 - `master` への push 時: 本番へ自動デプロイする
