@@ -119,3 +119,6 @@ dist
 # Firebase public directory
 public/*.css
 public/*.html
+
+# Claude Code local settings
+.claude/settings.local.json
