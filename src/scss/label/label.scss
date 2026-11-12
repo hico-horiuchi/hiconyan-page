@@ -1,0 +1,13 @@
+//--------------------------------------------------
+// Label: Label
+//--------------------------------------------------
+
+.Label {
+  line-height: 1.5rem;
+  padding: 0 $spacer-2;
+}
+
+.Label--theme {
+  border-color: var(--color-fg-theme);
+  color: var(--color-fg-theme);
+}
