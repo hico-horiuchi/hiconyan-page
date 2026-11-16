@@ -20,3 +20,8 @@ i[class^="fa-"],
 svg.svg-inline--fa {
   letter-spacing: 0;
 }
+
+// Primer の .text-semibold は --base-text-weight-medium (400) を参照するため上書きする
+.text-semibold {
+  font-weight: var(--base-text-weight-semibold) !important;
+}
