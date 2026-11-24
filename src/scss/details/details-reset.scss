@@ -1,0 +1,23 @@
+//--------------------------------------------------
+// Details: details-reset
+//--------------------------------------------------
+
+.details-reset {
+  > summary {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    .fa-chevron-right {
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  &[open] {
+    > summary .fa-chevron-right {
+      transform: rotate(90deg);
+    }
+  }
+}
